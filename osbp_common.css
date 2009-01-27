@@ -473,6 +473,7 @@ div.sidebar ul ul {
 
 div.sidebar ul ul li {
 	margin: 0;
+	list-style: disc;
 }
 
 div.sidebar ul ul ul {
