@@ -315,7 +315,7 @@ th{
 h2.entry-title {
 	background: #c0def5;
 	margin: 0 -25px .8em;
-	text-indent: 25px;
+	padding: .2em 25px;
 	line-height: 1.5;
 }
 
