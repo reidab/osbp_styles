@@ -1,4 +1,7 @@
-/* @override http://localhost:3000/themes/bridgepdx/stylesheets/common_css/osbp_common.css */
+/* @override 
+	http://localhost:3000/themes/bridgepdx/stylesheets/common_css/osbp_common.css
+	http://opensourcebridge.org/wp-content/themes/osbp_wordpress_theme/common_css/osbp_common.css
+*/
 
 /* Open Source Bridge Common Styles
 	
@@ -466,8 +469,8 @@ div#content {
 div.sidebar {
 	float: right;
 	overflow: hidden;
-	width: 16.75em;
-	padding: 1em 0 0;
+	width: 15.5em;
+	padding: 1em 1em 0 0;
 }
 
 div.sidebar div,div.sidebar ul {
