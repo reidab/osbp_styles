@@ -454,12 +454,12 @@ div#menu ul li:hover ul {
 
 div#container {
 	float: left;
-	margin: 0 -17.86em 0 0;
+	margin: 0 -19.86em 0 0;
 	width: 100%;
 }
 
 div#content {
-	margin: 0 17.86em 0 0;
+	margin: 0 19.86em 0 0;
 	padding: 25px;
 	border-right: 1px solid #c6d3dd;
 }
@@ -469,7 +469,7 @@ div#content {
 div.sidebar {
 	float: right;
 	overflow: hidden;
-	width: 15.5em;
+	width: 17.5em;
 	padding: 1em 1em 0 0;
 }
 
