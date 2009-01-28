@@ -17,7 +17,6 @@
 	
 	#c0def5 - light blue, h2 background
 	#f1f9ff - even lighter blue, blockquote bg, alt table
-	
 
 */
 
@@ -37,7 +36,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 }
 
 body {
-	font: 75%/1.5em "Helvetica Neue", Arial, Helvetica, "Liberation sans", "Bitstream Vera Sans", sans-serif;
+	font: 87.5%/1.5em "Helvetica Neue", Arial, Helvetica, "Liberation sans", "Bitstream Vera Sans", sans-serif;
 	background: #fff;
 	margin: 1.5em 0;
 	position: relative;
@@ -103,7 +102,7 @@ a:visited {
 }
 
 #footer a:visited {
-	color: ;#c0def5
+	color: #c0def5;
 }
 
 /*
@@ -113,31 +112,31 @@ a:visited {
 /* @group Headings */
 
 h1 {
-	font-size: 3em;
+	font-size: 2.5em;
 	line-height: 1;
-	margin-bottom: 0.5em;
+	margin-bottom: 0.4em;
 }
 
 h2 {
-	font-size: 2em;
-	margin-bottom: 0.75em;
+	font-size: 1.75em;
+	margin-bottom: 0.6em;
 }
 
 h3 {
-	font-size: 1.5em;
+	font-size: 1.25em;
 	line-height: 1;
-	margin-bottom: 1em;
+	margin-bottom: .7em;
 }
 
 h4 {
-	font-size: 1.2em;
+	font-size: 1.15em;
 	line-height: 1.25;
-	margin-bottom: 1.25em;
+	margin-bottom: .7em;
 }
 
 h5 {
 	font-size: 1em;
-	margin-bottom: 1.5em;
+	margin-bottom: .5em;
 }
 
 h6 {
@@ -193,19 +192,18 @@ cite,em,i {
 	font-style: italic;
 }
 
-del{
-	text-decoration:line-through;
+del {
+	text-decoration: line-through;
 }
 
-ins{
-	text-decoration:overline;
+ins {
+	text-decoration: overline;
 }
 
-dfn{
-	border-bottom:1px dashed;
-	font-style:italic;
+dfn {
+	border-bottom: 1px dashed;
+	font-style: italic;
 }
-
 
 a:hover {
 	text-decoration: none;
@@ -213,23 +211,24 @@ a:hover {
 
 blockquote p {
 	background: #f1f9ff;
-	margin:0 1.5em 1.5em;
+	margin: 0 1.5em 1.5em;
 	padding: 0.75em;
 }
 
-sub{
-	bottom:-0.4em;
-	font-size:0.85em;
-	line-height:1em;
-	position:relative;
-	vertical-align:baseline;
+sub {
+	bottom: -0.4em;
+	font-size: 0.85em;
+	line-height: 1em;
+	position: relative;
+	vertical-align: baseline;
 }
-sup{
-	font-size:0.85em;
-	line-height:1em;
-	position:relative;
-	top:-0.4em;
-	vertical-align:baseline;
+
+sup {
+	font-size: 0.85em;
+	line-height: 1em;
+	position: relative;
+	top: -0.4em;
+	vertical-align: baseline;
 }
 
 strong {
@@ -245,13 +244,13 @@ dfn {
 }
 
 pre, code {
-	margin:0 0 1.5em;
-	padding:0 0 0 1.5em;
+	margin: 0 0 1.5em;
+	padding: 0 0 0 1.5em;
 	white-space: pre;
 }
 
-pre,code,kbd,tt{
-	font:1em/1.5em Consolas, "Courier New", Courier, monospace;
+pre,code,kbd,tt {
+	font: 1em/1.5em Consolas, "Courier New", Courier, monospace;
 }
 
 tt {
@@ -272,29 +271,55 @@ hr {
 table {
 	margin-bottom: 1.5em;
 }
-caption{
-	font-style:italic;
-	text-align:left;
+
+caption {
+	font-style: italic;
+	text-align: left;
 }
-tr.alt td{
-	background:#f1f9ff;
+
+tr.alt td,
+tr.even td {
+	background: #f1f9ff;
 }
-td{
-	border:1px solid #000;
-	padding:0.333em;
-	vertical-align:middle;
+
+td {
+	padding: 0.333em;
+	vertical-align: middle;
 }
-th{
-	font-weight:700;
-	padding:0.333em;
-	vertical-align:middle;
+
+th {
+	font-weight: 700;
+	padding: 0.333em;
+	vertical-align: middle;
+}
+
+/* @end */
+
+/* @group Forms */
+
+input[type=text], input[type=password], textarea {
+	font-style: inherit;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+form .help {
+	margin: 0 0 .5em 0;
+	color: #999;
+	font-size: .85em;
 }
 
 /* @end */
 
 /* @end */
 
-/* @group Common Classes */
+/* @group Common
+
+Classes */
+
+.clear {
+	clear: both;
+}
 
 .alignright,img.alignright {
 	float: right;
@@ -328,15 +353,13 @@ h2.entry-title a {
 	border-bottom: none;
 }
 
-
-
 /* @end */
 
 /* @group Layout */
 
 #wrapper {
 	background: #fff;
-	width: 83.33em;
+	width: 71.42em;
 	margin: 25px auto;
 	position: relative;
 }
@@ -380,8 +403,8 @@ div.skip-link a:focus {
 div#menu {
 	background: #116db6;
 	color: #fff;
-	height: 3em;
-	line-height: 3em;
+	height: 2.5em;
+	line-height: 2.5em;
 	padding: 0 1em;
 	text-transform: uppercase;
 }
@@ -402,7 +425,7 @@ div#menu ul a {
 	margin-right: 1em;
 	padding: 0 0.5em;
 	text-decoration: none;
-	font-size: 1.25em;
+	font-size: 1.1em;
 }
 
 div#menu ul li.current_page_item a {
@@ -426,12 +449,12 @@ div#menu ul li:hover ul {
 
 div#container {
 	float: left;
-	margin: 0 -20.833em 0 0;
+	margin: 0 -17.86em 0 0;
 	width: 100%;
 }
 
 div#content {
-	margin: 0 20.833em 0 0;
+	margin: 0 17.86em 0 0;
 	padding: 25px;
 	border-right: 1px solid #c6d3dd;
 }
@@ -441,7 +464,8 @@ div#content {
 div.sidebar {
 	float: right;
 	overflow: hidden;
-	width: 19.5em;
+	width: 16.75em;
+	padding: 1em 0 0;
 }
 
 div.sidebar div,div.sidebar ul {
@@ -454,7 +478,8 @@ div#secondary {
 }
 
 div.sidebar h3 {
-	margin: .5em 0
+	margin: .5em 0;
+	font-size: font-size: .85em;
 }
 
 div.sidebar li {
@@ -469,6 +494,7 @@ div.sidebar li form {
 
 div.sidebar ul ul {
 	margin: 0 0 0 1.5em;
+	font-size: .85em;
 }
 
 div.sidebar ul ul li {
