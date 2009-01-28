@@ -1,3 +1,5 @@
+/* @override http://localhost:3000/themes/bridgepdx/stylesheets/common_css/osbp_common.css */
+
 /* Open Source Bridge Common Styles
 	
 	The latest version of this stylesheet can be found at
@@ -543,5 +545,85 @@ div#footer {
 	height: 17px;
 	background: url(i/header-description.gif);
 }
+
+/* @end */
+
+/* @group Rails Common Elements */
+
+/* @group Flash Notices */
+
+.flash p {
+	margin: 0.5em 0;
+	padding: 0.5em;
+}
+
+.flash .notice {
+	color: #555555;
+	background: #f1f9ff;
+	border: 1px solid #116db6;
+}
+
+.flash .success {
+	color: #555555;
+	background: #e1ffe8;
+	border: 1px solid #08b9a6;
+}
+
+.flash .failure {
+	color: #555555;
+	background: #ffeded;
+	border: 1px solid #c60000;
+}
+
+/* @end */
+
+/* @group Errors */
+
+#errorExplanation {
+	border: 2px solid #c60000;
+	padding: 7px;
+	padding-bottom: 12px;
+	margin-bottom: 20px;
+	background-color: #;
+}
+
+#errorExplanation h2 {
+	padding: .5em 1em;
+	font-size: 1em;
+	margin: -7px;
+	background-color: #c60000;
+	color: #fff;
+}
+
+#errorExplanation p {
+	color: #333;
+	margin: 1em .5em .5em;
+}
+
+#errorExplanation ul {
+	margin-bottom: 0;
+}
+
+#errorExplanation li {
+	font-size: .9em;
+}
+
+.fieldWithErrors {
+	margin: 0;
+	display: inline;
+	background-color: inherit;
+}
+
+.fieldWithErrors label {
+	color: #c60000;
+}
+
+.fieldWithErrors textarea,
+  .fieldWithErrors input[type=text],
+  .fieldWithErrors input[type=checkbox] {
+	border: 2px solid #c60000;
+}
+
+/* @end */
 
 /* @end */
