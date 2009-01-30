@@ -1,8 +1,3 @@
-/* @override 
-	http://localhost:3000/themes/bridgepdx/stylesheets/common_css/osbp_common.css
-	http://opensourcebridge.org/wp-content/themes/osbp_wordpress_theme/common_css/osbp_common.css
-*/
-
 /* Open Source Bridge Common Styles
 	
 	The latest version of this stylesheet can be found at
@@ -123,12 +118,12 @@ h1 {
 }
 
 h2 {
-	font-size: 1.75em;
+	font-size: 1.65em;
 	margin-bottom: 0.6em;
 }
 
 h3 {
-	font-size: 1.25em;
+	font-size: 1.4em;
 	line-height: 1;
 	margin-bottom: .7em;
 }
@@ -148,8 +143,12 @@ h6 {
 	font-size: 1em;
 }
 
-h3, h4, h5, h6 {
+h1, h2, h3 {
 	color: #116db6;
+}
+
+h4, h5, h6 {
+	color: #333;
 }
 
 /* @end */
@@ -347,6 +346,7 @@ h2.entry-title {
 	margin: 0 -25px .8em;
 	padding: .2em 25px;
 	line-height: 1.5;
+	color: #333;
 }
 
 h2.entry-title a {
@@ -484,7 +484,7 @@ div#secondary {
 
 div.sidebar h3 {
 	margin: .5em 0;
-	font-size: font-size: .85em;
+	font-size: 1.25em;
 }
 
 div.sidebar li {
