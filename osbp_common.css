@@ -425,7 +425,7 @@ div#menu ul, div#menu ul ul {
 }
 
 div#menu ul a {
-	color: inherit;
+	color: #fff;
 	display: block;
 	margin-right: 1em;
 	padding: 0 0.5em;
