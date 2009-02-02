@@ -520,8 +520,7 @@ div.sidebar ul ul ul li {
 li.pre-bulletted,
 div.sidebar li.pre-bulletted {
 	list-style: none;
-	position: relative;
-	left: -20px;
+	text-indent: -20px;
 }
 
 /* @end */
