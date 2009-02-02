@@ -116,10 +116,13 @@ a:visited {
 
 /* @group Headings */
 
-h1 {
-	font-size: 2.5em;
-	line-height: 1;
-	margin-bottom: 0.4em;
+h1,
+h2.entry-title {
+	background: #c0def5;
+	margin: 0 -25px .8em;
+	padding: .2em 25px;
+	line-height: 1.5;
+	color: #333;
 }
 
 h2 {
@@ -383,6 +386,8 @@ h2.entry-title a {
 
 #site-title {
 	margin: 0;
+	padding: 0;
+	background: transparent;
 }
 
 #site-description {
