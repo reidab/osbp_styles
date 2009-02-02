@@ -118,6 +118,7 @@ a:visited {
 
 h1,
 h2.entry-title {
+	font-size: 1.65em;
 	background: #c0def5;
 	margin: 0 -25px .8em;
 	padding: .2em 25px;
