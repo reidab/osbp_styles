@@ -126,6 +126,11 @@ h2.entry-title {
 	color: #333;
 }
 
+h1 a,
+h2.entry-title a {
+	color: #494b50;
+	text-decoration: none;
+}
 h2 {
 	font-size: 1.65em;
 	margin-bottom: 0.6em;
@@ -348,19 +353,6 @@ Classes */
 	display: block;
 	margin: 0 auto;
 	text-align: center;
-}
-
-h2.entry-title {
-	background: #c0def5;
-	margin: 0 -25px .8em;
-	padding: .2em 25px;
-	line-height: 1.5;
-	color: #333;
-}
-
-h2.entry-title a {
-	color: #494b50;
-	text-decoration: none;
 }
 
 .entry-date abbr {
