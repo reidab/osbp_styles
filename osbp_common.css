@@ -94,7 +94,7 @@ body {
 	color: #494b50;
 }
 
-a, a:link {
+a:link {
 	color: #00a8d8;
 }
 
@@ -555,6 +555,14 @@ div#footer {
 	width: 485px;
 	height: 17px;
 	background: url(i/header-description.gif);
+}
+
+/* @end */
+
+/* @group Link Annotations */
+
+.feedable {
+	
 }
 
 /* @end */
