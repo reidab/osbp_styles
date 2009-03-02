@@ -591,7 +591,8 @@ div.sidebar ul ul ul li {
 li.pre-bulletted,
 div.sidebar li.pre-bulletted {
 	list-style: none;
-	text-indent: -20px;
+	position: relative;
+	left: -18px;
 }
 
 /* @end */
@@ -633,8 +634,36 @@ div#footer {
 
 /* @group Link Annotations */
 
-.feedable {
-	
+a.chicklet {
+	display: block;
+	padding: 3px 0 0 50px;
+	min-height: 23px;
+	background-position: 0 center;
+	background-repeat: no-repeat;
+}
+
+a.twitter.chicklet {
+	background-image: url(i/twitter.png);
+}
+
+a.facebook.chicklet {
+	background-image: url(i/facebook.png);
+}
+
+a.dopplr.chicklet {
+	background-image: url(i/dopplr.png);
+}
+
+a.rss.chicklet {
+	background-image: url(i/rss.png);
+}
+
+a.friendfeed.chicklet {
+	background-image: url(i/friendfeed.png);
+}
+
+a.feedburner {
+	margin-left: 50px;
 }
 
 /* @end */
