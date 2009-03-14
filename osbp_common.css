@@ -394,7 +394,7 @@ Classes */
 	position: absolute;
 	right: 0;
 	top: 0;
-	background: url(i/header-sidebar.gif) top center;
+	background: url(i/header-sidebar.gif) no-repeat top center;
 	width: 20em;
 	height: 161px;
 }
@@ -411,7 +411,7 @@ Classes */
 #conference-date-location p {
 	width: 142px;
 	height: 41px;
-	background: url(i/header-date.png);
+	background: url(i/header-date.png) no-repeat;
 	overflow: hidden;
 	text-indent: -999px;
 	margin: 60px auto	;
@@ -627,7 +627,7 @@ div#footer {
 #site-description {
 	width: 322px;
 	height: 17px;
-	background: url(i/header-description.gif);
+	background: url(i/header-description.gif) no-repeatg;
 }
 
 /* @end */
