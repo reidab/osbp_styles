@@ -627,7 +627,7 @@ div#footer {
 #site-description {
 	width: 322px;
 	height: 17px;
-	background: url(i/header-description.gif) no-repeatg;
+	background: url(i/header-description.gif) no-repeat;
 }
 
 /* @end */
@@ -652,6 +652,10 @@ a.facebook.chicklet {
 
 a.dopplr.chicklet {
 	background-image: url(i/dopplr.png);
+}
+
+a.identica.chicklet {
+	background-image: url(i/identica.png);
 }
 
 a.rss.chicklet {
