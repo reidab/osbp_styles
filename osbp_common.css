@@ -658,6 +658,10 @@ a.identica.chicklet {
 	background-image: url(i/identica.png);
 }
 
+a.identica.chicklet {
+	background-image: url(i/linkedin.png);
+}
+
 a.rss.chicklet {
 	background-image: url(i/rss.png);
 }
