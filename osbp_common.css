@@ -182,7 +182,7 @@ ul {
 }
 
 ol {
-	list-style: inside decimal;
+	list-style: outside decimal;
 }
 
 dl {
@@ -408,6 +408,15 @@ Classes */
 	right: 0;
 }
 
+#subnav-sidebar-background {
+	background: #6c9ab0;
+	width: 20em;
+	height: 2.5em;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
 #conference-date-location p {
 	width: 142px;
 	height: 41px;
@@ -436,7 +445,7 @@ div.skip-link a:focus {
 
 /* @group Menu */
 
-div#menu {
+div#menu, div.navbar {
 	background: #116db6;
 	color: #fff;
 	height: 2.5em;
@@ -445,17 +454,28 @@ div#menu {
 	text-transform: uppercase;
 }
 
-div#menu ul li {
+div#subnav {
+	background: #96d6f5;
+	position: relative;
+}
+
+div#subnav ul a {
+	color: #333;
+}
+
+div#menu ul li, div.navbar ul li {
 	float: left;
 }
 
-div#menu ul, div#menu ul ul {
+div#menu ul, div#menu ul ul,
+div.navbar ul, div.navbar ul ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
-div#menu ul a {
+div#menu ul a,
+div.navbar ul a {
 	color: #fff;
 	display: block;
 	margin-right: 1em;
@@ -464,7 +484,8 @@ div#menu ul a {
 	font-size: 1.1em;
 }
 
-div#menu ul li.current_page_item a {
+div#menu ul li.current_page_item a,
+div.navbar ul li.current_page_item a {
 	background: url(i/menu-selected.gif) no-repeat center bottom;
 }
 
@@ -472,7 +493,8 @@ div#menu ul ul ul a {
 	font-style: italic;
 }
 
-div#menu ul li ul {
+div#menu ul li ul,
+div.navbar ul li ul {
 	left: -999em;
 	position: absolute;
 }
