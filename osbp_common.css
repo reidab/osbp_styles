@@ -455,6 +455,10 @@ div#menu, div.navbar {
 }
 
 div#subnav {
+	text-transform: none;
+}
+
+div#subnav {
 	background: #96d6f5;
 	position: relative;
 }
@@ -487,6 +491,11 @@ div.navbar ul a {
 div#menu ul li.current_page_item a,
 div.navbar ul li.current_page_item a {
 	background: url(i/menu-selected.gif) no-repeat center bottom;
+}
+
+div#subnav ul li.current_page_item a {
+	background: no-repeat;
+	font-weight: bold;
 }
 
 div#menu ul ul ul a {
