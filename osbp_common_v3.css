@@ -789,14 +789,19 @@ a.feedburner {
 
 /* @end */
 
-.register-callout {
+.register-callout,
+div.sidebar div.register-callout {
 	background: #08b9a6;
 	color: #fff;
 	padding: 10px;
 	margin-bottom: 20px;
+	max-width: 150px;
 }
 
-a.register-button {
+a.register-button,
+a.register-button:link,
+a.register-button:visited,
+a.register-button:active {
 	margin-top: 10px;
 	display: block;
 	text-align: center;
@@ -807,13 +812,18 @@ a.register-button {
 	text-decoration: none;
 }
 
-.submit-callout {
+.submit-callout,
+div.sidebar .submit-callout {
 	background: #0bacd9;
 	color: #fff;
 	padding: 10px;
+	max-width: 150px;
 }
 
-a.propose-button {
+a.propose-button,
+a.propose-button:link,
+a.propose-button:visited,
+a.propose-button:active {
 	margin-top: 10px;
 	display: block;
 	text-align: center;
