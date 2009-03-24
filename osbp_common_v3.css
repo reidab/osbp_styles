@@ -1,7 +1,7 @@
 /* @override 
-	http://opensourcebridge.org/common/osbp_common.css
-	http://localhost:3000/themes/bridgepdx/stylesheets/common_css/osbp_common.css
-	http://localhost/web/bridge_styles/osbp_common.css
+	http://opensourcebridge.org/common/osbp_common_v3.css
+	http://localhost:3000/themes/bridgepdx/stylesheets/common_css/osbp_common_v3.css
+	http://localhost/web/bridge_styles/osbp_common_v3.css
 */
 
 /* Open Source Bridge Common Styles
@@ -781,68 +781,6 @@ a.feedburner {
 
 /* @end */
 
-#frontpage_info {
-	background: url(i/v3_front_info_bg.gif) repeat-x;
-	padding: 2.5em 0;
-	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-}
-
-#frontpage_info strong {
-	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-}
-
-#frontpage_info h2 {
-	color: #222;
-	font-size: 1.65em;
-}
-
-#frontpage_sidebar {
-	width: 225px;
-	float: left;
-}
-
-#conference-summary {
-	margin-bottom: 2.5em;
-}
-
-#frontpage_content {
-	background: #fff;
-	padding: 15px;
-	width: 510px;
-	margin-left: 240px;
-}
-
-#frontpage_content h4 {
-	font-weight: bold;
-	margin: 0;
-}
-
-.frontpage_snippet {
-	padding: 0 0 0 60px;
-}
-
-#citizen_snippet {
-	background: url(i/v3_icon_citizen.gif) no-repeat 7px 3px;
-}
-
-#tracks_snippet {
-	background: url(i/v3_icon_tracks.gif) no-repeat 7px 3px;
-}
-
-#lounge_snippet {
-	background: url(i/v3_icon_lounge.png) no-repeat 7px 0;
-}
-
-#volunteer_snippet {
-	background: url(i/v3_icon_volunteers.png) no-repeat 7px 3px;
-}
-
-#frontpage_callouts {
-	float: right;
-	width: 160px;
-	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-}
-
 .register-callout {
 	background: #08b9a6;
 	color: #fff;
@@ -878,15 +816,24 @@ a.propose-button {
 	text-decoration: none;
 }
 
-#frontpage_blog {
-	clear: both;
-	background: #fff;
-	padding: 10px;
-	width: 760px;
+.frontpage_snippet {
+	padding: 0 0 0 60px;
 }
 
-#frontpage_blog .post {
-	margin: 20px 60px 0 30px;
+#citizen_snippet {
+	background: url(i/v3_icon_citizen.gif) no-repeat 7px 3px;
+}
+
+#tracks_snippet {
+	background: url(i/v3_icon_tracks.gif) no-repeat 7px 3px;
+}
+
+#lounge_snippet {
+	background: url(i/v3_icon_lounge.png) no-repeat 7px 0;
+}
+
+#volunteer_snippet {
+	background: url(i/v3_icon_volunteers.png) no-repeat 7px 3px;
 }
 
 h2#latest_news_head {
