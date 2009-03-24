@@ -864,6 +864,12 @@ h2#latest_news_head {
 	border-bottom: 1px solid #eee;
 }
 
+h2#latest_news_head a {
+	font-size: .7em;
+	float: right;
+	font-weight: normal;
+}
+
 #frontpage_info {
 	background: url(i/v3_front_info_bg.gif) repeat-x;
 	padding: 2.5em 0;
