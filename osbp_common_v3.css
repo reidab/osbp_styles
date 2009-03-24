@@ -675,31 +675,31 @@ a.chicklet {
 	background-repeat: no-repeat;
 }
 
-a.twitter.chicklet {
+a.chicklet.twitter {
 	background-image: url(i/twitter.png);
 }
 
-a.facebook.chicklet {
+a.chicklet.facebook {
 	background-image: url(i/facebook.png);
 }
 
-a.dopplr.chicklet {
+a.chicklet.dopplr {
 	background-image: url(i/dopplr.png);
 }
 
-a.identica.chicklet {
+a.chicklet.identica {
 	background-image: url(i/identica.png);
 }
 
-a.linkedin.chicklet {
+a.chicklet.linkedin {
 	background-image: url(i/linkedin.png);
 }
 
-a.rss.chicklet {
+a.chicklet.rss {
 	background-image: url(i/rss.png);
 }
 
-a.friendfeed.chicklet {
+a.chicklet.friendfeed {
 	background-image: url(i/friendfeed.png);
 }
 
