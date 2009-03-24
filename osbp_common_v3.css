@@ -845,3 +845,9 @@ h2#latest_news_head {
 	font-size: 1.25em;
 	border-bottom: 1px solid #eee;
 }
+
+#frontpage_info {
+	background: url(i/v3_front_info_bg.gif) repeat-x;
+	padding: 2.5em 0;
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
