@@ -1,0 +1,900 @@
+/* @override 
+	http://opensourcebridge.org/common/osbp_common.css
+	http://localhost:3000/themes/bridgepdx/stylesheets/common_css/osbp_common.css
+	http://localhost/web/bridge_styles/osbp_common.css
+*/
+
+/* Open Source Bridge Common Styles
+	
+	The latest version of this stylesheet can be found at
+	http://github.com/reidab/osbp_styles
+	
+*/
+
+/* Color Reference 
+
+	#818285 - gray from logo
+	#116db6 - blue from logotype, h3
+	#08b9a6 - teal from logotype
+	
+	#0a3456 - body background
+	
+	#00a8d8 - brighter blue, used for links
+	
+	#c0def5 - light blue, h2 background
+	#f1f9ff - even lighter blue, blockquote bg, alt table
+
+*/
+
+/* @group Reset */
+
+/* Strict reset here, overrides below. Should get squashed by build process. */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	font: 87.5%/1.5em "Helvetica Neue", Arial, Helvetica, "Liberation sans", "Bitstream Vera Sans", sans-serif;
+	background: #fff;
+	margin: 1.5em 0;
+	position: relative;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+caption, th, td {
+	text-align: left;
+	font-weight: 400;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+}
+
+blockquote, q {
+	quotes: "" "";
+}
+
+a img {
+	border: none;
+}
+
+input,textarea {
+	margin: 0;
+}
+
+/* Removes Firefox imposed outline */
+
+a {
+	outline: none;
+}
+
+/* @end */
+
+/* @group Typograpy */
+
+/* @group Colors */
+
+body {
+	background: #191919;
+	color: #ccc;
+}
+
+a:link {
+	color: #00a8d8;
+}
+
+a:visited {
+	color: #008d7f;
+}
+
+/*
+
+ @end */
+
+/* @group Headings */
+
+h1 {
+	font-size: 1.65em;
+	line-height: 1.5;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin-bottom: 0.6em;
+}
+
+h2.entry-title a {
+	color: #222;
+	text-decoration: none;
+}
+
+h3 {
+	font-size: 1.35em;
+	line-height: 1;
+	margin-bottom: .7em;
+}
+
+h4 {
+	font-size: 1.15em;
+	line-height: 1.25;
+	margin-bottom: .7em;
+}
+
+h5 {
+	font-size: 1em;
+	margin-bottom: .5em;
+}
+
+h6 {
+	font-size: 1em;
+}
+
+h1, h2, h3 {
+	color: #116db6;
+}
+
+h4, h5, h6 {
+	color: #333;
+}
+
+/* @end */
+
+/* @group Text Elements */
+
+p {
+	margin: 0 0 1.5em;
+}
+
+ul, ol {
+	margin: 0 1.5em 1.5em 1.5em;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+ol {
+	list-style: outside decimal;
+}
+
+dl {
+	margin: 0 0 1.5em 0;
+}
+
+dl dt {
+	font-weight: bold;
+}
+
+dl dd {
+	margin-left: 1.5em;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted;
+}
+
+address {
+	margin-top: 1.5em;
+	font-style: italic;
+}
+
+cite,em,i {
+	font-style: italic;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+ins {
+	text-decoration: overline;
+}
+
+dfn {
+	border-bottom: 1px dashed;
+	font-style: italic;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+blockquote p {
+	background: #f1f9ff;
+	margin: 0 1.5em 1.5em;
+	padding: 0.75em;
+}
+
+sub {
+	bottom: -0.4em;
+	font-size: 0.85em;
+	line-height: 1em;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	font-size: 0.85em;
+	line-height: 1em;
+	position: relative;
+	top: -0.4em;
+	vertical-align: baseline;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em, dfn {
+	font-style: italic;
+}
+
+dfn {
+	font-weight: bold;
+}
+
+pre {
+	margin: 0 0 1.5em;
+	padding: 0 0 0 1.5em;
+	white-space: pre;
+}
+
+pre,code,kbd,tt {
+	font: 1em/1.5em Consolas, "Courier New", Courier, monospace;
+}
+
+tt {
+	display: block;
+	margin: 1.5em 0;
+	line-height: 1.5;
+}
+
+hr {
+	border: none;
+	border-bottom: 1px solid #c6d3dd;
+}
+
+/* @end */
+
+/* @group Tables */
+
+table {
+	margin-bottom: 1.5em;
+}
+
+caption {
+	font-style: italic;
+	text-align: left;
+}
+
+tr.alt td,
+tr.even td {
+	background: #f1f9ff;
+}
+
+td {
+	padding: 0.333em;
+	vertical-align: middle;
+}
+
+th {
+	font-weight: 700;
+	padding: 0.333em;
+	vertical-align: middle;
+}
+
+/* @end */
+
+/* @group Forms */
+
+input[type=text], input[type=password], textarea {
+	font-style: inherit;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+.help {
+	margin: 0;
+	color: #999;
+	font-size: .85em;
+}
+
+/* @end */
+
+/* @end */
+
+/* @group Common
+
+Classes */
+
+.clear {
+	clear: both;
+}
+
+.alignright,img.alignright {
+	float: right;
+	margin: 0 0 0 1em;
+}
+
+.alignleft,img.alignleft {
+	float: left;
+	margin: 0 1em 0 0;
+}
+
+.aligncenter,img.aligncenter {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.entry-date abbr {
+	border-bottom: none;
+}
+
+/* @end */
+
+/* @group Layout */
+
+body {
+	margin: 0;
+}
+
+#wrapper {
+	position: relative;
+	background: #f4fafe;
+	color: #191919;
+}
+
+.inner_container {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+/* @group Header */
+
+#header {
+	background: url(i/v3_header_bg.gif) repeat-x #fff;
+}
+
+#header .inner_container {
+	padding: 35px 0 24px;
+	position: relative;
+	height: 109px;
+}
+
+#site-title {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+#site-description {
+	float: right;
+	text-align: right;
+	margin-top: 45px;
+}
+
+#site-description h2 {
+	color: #222;
+	font-size: 1.3em;
+	margin: 0;
+}
+
+#conference-date-location {
+	color: #08b9a6;
+}
+
+#header-reg-now {
+	color: #fff;
+	background: #08b9a6 url(i/v3_head_reg_shadow.gif) no-repeat left bottom;
+	text-decoration: none;
+	font-weight: bold;
+	border-right: 4px solid #109a8b;
+	position: absolute;
+	top: 7px;
+	right: 0;
+	display: block;
+	padding: 0 1em .5em;
+}
+
+div.skip-link a {
+	position: absolute;
+	right: 0;
+	top: -99px;
+	background: #116db6;
+	color: #fff;
+	padding: .5em;
+	font-size: .7em;
+	text-decoration: none;
+}
+
+div.skip-link a:focus {
+	top: 0;
+}
+
+/* @end */
+
+/* @group Menu */
+
+div#menu {
+	background: #116db6 url(i/v3_menu_corner.gif) no-repeat left top;
+	color: #fff;
+	height: 2.5em;
+	line-height: 2.5em;
+	position: absolute;
+	margin: -28px 0 0 -230px;
+	left: 50%;
+	right: 0;
+	font-weight: bold;
+}
+
+div#menu, div#menu ul a {
+	border-bottom: 7px solid #13558a;
+	color: #fff;
+}
+
+#menu_first_item {
+	background: url(i/v3_menu_shadow_corner.gif) no-repeat left bottom;
+	padding-left: 8px;
+}
+
+#menu_first_item a {
+	margin-left: .5em;
+}
+
+div#menu ul li, div.navbar ul li {
+	float: left;
+}
+
+div#menu ul, div#menu ul ul,
+div.navbar ul, div.navbar ul ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+div#menu ul a,
+div.navbar ul a {
+	display: block;
+	margin-right: 1.5em;
+	padding: 0 0.5em;
+	text-decoration: none;
+	font-size: 1.1em;
+}
+
+div#menu ul li.current_page_item a,
+div.navbar ul li.current_page_item a {
+	background: url(i/menu-selected.gif) no-repeat center bottom;
+}
+
+#subnav {
+	background-color: #d8efff;
+	padding: 1em 0 3em;
+}
+
+div#subnav ul a {
+	margin: 0;
+	margin-left: 1.5em;
+}
+
+#subnav ul {
+	float: right;
+	margin-top: -2.2em;
+}
+
+#subnav h2 {
+	line-height: 2;
+	margin: 0;
+	color: #222;
+	padding: 0 270px 0 25px;
+}
+
+div#subnav ul li.current_page_item a {
+	background: no-repeat;
+	font-weight: bold;
+}
+
+div#menu ul ul ul a {
+	font-style: italic;
+}
+
+div#menu ul li ul,
+div.navbar ul li ul {
+	left: -999em;
+	position: absolute;
+}
+
+div#menu ul li:hover ul {
+	left: auto;
+}
+
+/* @end */
+
+div#container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+div#content {
+	padding: 25px;
+	width: 650px;
+	float: left;
+	background: #fff;
+	margin: -3em auto 3em;
+}
+
+.register-now-button {
+	width: 204px;
+	height: 48px;
+	display: block;
+	background: url(i/register_now.png) no-repeat;
+	overflow: hidden;
+	text-indent: -999px;
+	margin: 0 auto;
+}
+
+.book-now-button {
+	width: 204px;
+	height: 48px;
+	display: block;
+	background: url(i/book_a_room.png) no-repeat;
+	overflow: hidden;
+	text-indent: -999px;
+	margin: 0 auto;
+}
+
+.submit-a-proposal-button {
+	width: 204px;
+	height: 39px;
+	display: block;
+	background: url(i/submit_a_proposal.png);
+	overflow: hidden;
+	text-indent: -999px;
+	margin: 0 auto;
+}
+
+/* @group Sidebar */
+
+div.sidebar {
+	width: 200px;
+	float: right;
+	padding: 10px;
+	color: #222;
+
+}
+
+
+div.sidebar div,div.sidebar ul {
+	margin: 0;
+	padding: 0;
+}
+
+div#secondary {
+	clear: right;
+}
+
+div.sidebar h3 {
+	margin: .5em 0;
+	font-size: 1.25em;
+	color: #222;
+}
+
+div.sidebar li {
+	margin: 0 0 2em;
+	list-style: none;
+}
+
+div.sidebar li form {
+	margin: 0.2em 0 0;
+	padding: 0;
+}
+
+div.sidebar ul ul {
+	margin: 0 0 0 1.5em;
+	font-size: .85em;
+}
+
+div.sidebar ul ul li {
+	margin: 0;
+	list-style: disc;
+}
+
+div.sidebar ul ul ul {
+	margin: 0 0 0 0.7em;
+}
+
+div.sidebar ul ul ul li {
+	list-style: circle;
+}
+
+li.pre-bulletted,
+div.sidebar li.pre-bulletted {
+	list-style: none;
+	position: relative;
+	left: -18px;
+}
+
+/* @end */
+
+div#footer {
+	clear: both;
+	width: 100%;
+	background: #191919 url(i/v3_icon_footer.gif) no-repeat center bottom;
+	padding: 25px 0 60px;
+	text-align: center;
+	color: #ccc;
+	margin: 30px 0 0;
+}
+
+/* @end */
+
+/* @group Image Replacements */
+
+#site-title a {
+	overflow: hidden;
+	text-indent: -999px;
+	display: block;
+}
+
+#site-title a {
+	width: 232px;
+	height: 115px;
+	background: url(i/header-logo.gif) no-repeat;
+}
+
+/* @end */
+
+/* @group Link Annotations */
+
+a.chicklet {
+	display: block;
+	padding: 3px 0 0 50px;
+	min-height: 23px;
+	background-position: 0 center;
+	background-repeat: no-repeat;
+}
+
+a.twitter.chicklet {
+	background-image: url(i/twitter.png);
+}
+
+a.facebook.chicklet {
+	background-image: url(i/facebook.png);
+}
+
+a.dopplr.chicklet {
+	background-image: url(i/dopplr.png);
+}
+
+a.identica.chicklet {
+	background-image: url(i/identica.png);
+}
+
+a.linkedin.chicklet {
+	background-image: url(i/linkedin.png);
+}
+
+a.rss.chicklet {
+	background-image: url(i/rss.png);
+}
+
+a.friendfeed.chicklet {
+	background-image: url(i/friendfeed.png);
+}
+
+a.feedburner {
+	margin-left: 50px;
+}
+
+/* @end */
+
+/* @group Rails Common Elements */
+
+/* @group Flash Notices */
+
+.flash p {
+	margin: 0.5em 0;
+	padding: 0.5em;
+}
+
+.flash .notice {
+	color: #555555;
+	background: #f1f9ff;
+	border: 1px solid #116db6;
+}
+
+.flash .success {
+	color: #555555;
+	background: #e1ffe8;
+	border: 1px solid #08b9a6;
+}
+
+.flash .failure {
+	color: #555555;
+	background: #ffeded;
+	border: 1px solid #c60000;
+}
+
+/* @end */
+
+/* @group Errors */
+
+#errorExplanation {
+	border: 2px solid #c60000;
+	padding: 7px;
+	padding-bottom: 12px;
+	margin-bottom: 20px;
+	background-color: #;
+}
+
+#errorExplanation h2 {
+	padding: .5em 1em;
+	font-size: 1em;
+	margin: -7px;
+	background-color: #c60000;
+	color: #fff;
+}
+
+#errorExplanation p {
+	color: #333;
+	margin: 1em .5em .5em;
+}
+
+#errorExplanation ul {
+	margin-bottom: 0;
+}
+
+#errorExplanation li {
+	font-size: .9em;
+}
+
+.fieldWithErrors {
+	margin: 0;
+	display: inline;
+	background-color: inherit;
+}
+
+.fieldWithErrors label {
+	color: #c60000;
+}
+
+.fieldWithErrors textarea,
+  .fieldWithErrors input[type=text],
+  .fieldWithErrors input[type=checkbox] {
+	border: 2px solid #c60000;
+}
+
+/* @end */
+
+/* @end */
+
+#frontpage_info {
+	background: url(i/v3_front_info_bg.gif) repeat-x;
+	padding: 2.5em 0;
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+#frontpage_info strong {
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+#frontpage_info h2 {
+	color: #222;
+	font-size: 1.65em;
+}
+
+#frontpage_sidebar {
+	width: 225px;
+	float: left;
+}
+
+#conference-summary {
+	margin-bottom: 2.5em;
+}
+
+#frontpage_content {
+	background: #fff;
+	padding: 15px;
+	width: 510px;
+	margin-left: 240px;
+}
+
+#frontpage_content h4 {
+	font-weight: bold;
+	margin: 0;
+}
+
+.frontpage_snippet {
+	padding: 0 0 0 60px;
+}
+
+#citizen_snippet {
+	background: url(i/v3_icon_citizen.gif) no-repeat 7px 3px;
+}
+
+#tracks_snippet {
+	background: url(i/v3_icon_tracks.gif) no-repeat 7px 3px;
+}
+
+#lounge_snippet {
+	background: url(i/v3_icon_lounge.png) no-repeat 7px 0;
+}
+
+#volunteer_snippet {
+	background: url(i/v3_icon_volunteers.png) no-repeat 7px 3px;
+}
+
+#frontpage_callouts {
+	float: right;
+	width: 160px;
+	font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.register-callout {
+	background: #08b9a6;
+	color: #fff;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+a.register-button {
+	margin-top: 10px;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	padding: .5em;
+	background: #109a8b;
+	color: #fff;
+	text-decoration: none;
+}
+
+.submit-callout {
+	background: #0bacd9;
+	color: #fff;
+	padding: 10px;
+}
+
+a.propose-button {
+	margin-top: 10px;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	padding: .5em;
+	background: #238db2;
+	color: #fff;
+	text-decoration: none;
+}
+
+#frontpage_blog {
+	clear: both;
+	background: #fff;
+	padding: 10px;
+	width: 760px;
+}
+
+#frontpage_blog .post {
+	margin: 20px 60px 0 30px;
+}
+
+h2#latest_news_head {
+	font-weight: bold;
+	color: #222;
+	background: url(i/v3_icon_news.png) no-repeat;
+	min-height: 32px;
+	padding: 5px 0 0 40px;
+	font-size: 1.25em;
+	border-bottom: 1px solid #eee;
+}
