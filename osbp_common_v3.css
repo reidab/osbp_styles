@@ -492,8 +492,16 @@ div#subnav ul a {
 
 #subnav ul {
 	float: right;
-	margin-top: -2.2em;
+	margin: -2.2em 280px 0 0 ;
 }
+
+#subnav a,
+#subnav a:link,
+#subnav a:visited,
+#subnav a:active {
+	color: #222;
+}
+
 
 #subnav h2 {
 	line-height: 2;
