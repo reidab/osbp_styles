@@ -510,7 +510,8 @@ div#subnav ul a {
 	padding: 0 270px 0 25px;
 }
 
-div#subnav ul li.current_page_item a {
+div#subnav ul li.current_page_item a,
+div#subnav ul li.selected a {
 	background: no-repeat;
 	font-weight: bold;
 }
