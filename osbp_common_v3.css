@@ -820,6 +820,7 @@ div.sidebar .hotel-callout {
 	color: #fff;
 	padding: 10px;
 	max-width: 150px;
+	margin-bottom: 20px;
 }
 
 a.book-room-button,
@@ -832,6 +833,28 @@ a.book-room-button:active {
 	font-weight: bold;
 	padding: .5em;
 	background: #238db2;
+	color: #fff;
+	text-decoration: none;
+}
+
+.donate-callout,
+div.sidebar .donate-callout {
+	background: #a05cda;
+	color: #fff;
+	padding: 10px;
+	max-width: 150px;
+}
+
+a.donate-button,
+a.donate-button:link,
+a.donate-button:visited,
+a.donate-button:active {
+	margin-top: 10px;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	padding: .5em;
+	background: #7c47a9;
 	color: #fff;
 	text-decoration: none;
 }
