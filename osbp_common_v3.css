@@ -815,7 +815,7 @@ a.register-button:active {
 }
 
 .hotel-callout,
-div.sidebar .submit-hotel {
+div.sidebar .hotel-callout {
 	background: #0bacd9;
 	color: #fff;
 	padding: 10px;
