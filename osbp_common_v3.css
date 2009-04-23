@@ -814,18 +814,18 @@ a.register-button:active {
 	text-decoration: none;
 }
 
-.submit-callout,
-div.sidebar .submit-callout {
+.hotel-callout,
+div.sidebar .submit-hotel {
 	background: #0bacd9;
 	color: #fff;
 	padding: 10px;
 	max-width: 150px;
 }
 
-a.propose-button,
-a.propose-button:link,
-a.propose-button:visited,
-a.propose-button:active {
+a.book-room-button,
+a.book-room-button:link,
+a.book-room-button:visited,
+a.book-room-button:active {
 	margin-top: 10px;
 	display: block;
 	text-align: center;
