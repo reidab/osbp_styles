@@ -709,6 +709,10 @@ a.feedburner {
 	margin-left: 50px;
 }
 
+a.chicklet.calendar {
+	background-image: url(i/calendar.png);
+}
+
 /* @end */
 
 /* @group Rails Common Elements */
