@@ -543,6 +543,7 @@ div#content {
 	float: left;
 	background: #fff;
 	margin: -3em auto 3em;
+	position: relative;
 }
 
 .register-now-button {
