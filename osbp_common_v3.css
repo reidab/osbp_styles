@@ -2,6 +2,7 @@
 	http://opensourcebridge.org/common/osbp_common_v3.css
 	http://localhost:3000/themes/bridgepdx/stylesheets/common_css/osbp_common_v3.css
 	http://localhost/web/bridge_styles/osbp_common_v3.css
+	http://ocw.local/themes/bridgepdx/stylesheets/common_css/osbp_common_v3.css
 */
 
 /* Open Source Bridge Common Styles
@@ -469,7 +470,7 @@ div.navbar ul, div.navbar ul ul {
 div#menu ul a,
 div.navbar ul a {
 	display: block;
-	margin-right: 1.5em;
+	margin-right: 1.2em;
 	padding: 0 0.5em;
 	text-decoration: none;
 	font-size: 1.1em;
