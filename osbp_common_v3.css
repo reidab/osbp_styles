@@ -362,6 +362,7 @@ body {
 }
 
 .inner_container {
+  position: relative;
 	width: 960px;
 	margin: 0 auto;
 	padding: 0 10px;
@@ -388,7 +389,7 @@ body {
 #site-description {
 	float: right;
 	text-align: right;
-	margin-top: 45px;
+	margin-top: 20px;
 }
 
 #site-description h2 {
@@ -399,6 +400,7 @@ body {
 
 #conference-date-location {
 	color: #08b9a6;
+	font-weight: bold;
 }
 
 #header-reg-now {
@@ -433,59 +435,137 @@ div.skip-link a:focus {
 
 /* @group Menu */
 
-div#menu {
-	background: #116db6 url(i/v3_menu_corner.gif) no-repeat left top;
+#menu {
 	color: #fff;
-	height: 2.5em;
-	line-height: 2.5em;
 	position: absolute;
-	margin: -28px 0 0 -230px;
-	left: 50%;
-	right: 0;
-	font-weight: bold;
+	left: 250px;
+  top: -80px;
 }
 
-div#menu, div#menu ul a {
-	border-bottom: 7px solid #13558a;
-	color: #fff;
+#menu,
+#menu ul {
+  margin: 0;
+  padding: 0;
 }
 
-#menu_first_item {
-	background: url(i/v3_menu_shadow_corner.gif) no-repeat left bottom;
-	padding-left: 8px;
+#menu li {
+  list-style: none;
+  margin: 0;
+  float: left;
 }
 
-#menu_first_item a {
-	margin-left: .5em;
+#menu li a {
+  display: block;
+  padding: .1em .5em;
+  color: #fff;
+  text-decoration: none;
+  padding-top: 2px;
+  border-bottom: 2px solid transparent;
 }
 
-div#menu ul li, div.navbar ul li {
-	float: left;
+#menu li.global {
+  margin-left: 71px;
+  background: #109A8B url(i/v4_global_menu_corner_BL.gif) no-repeat left bottom;
+  padding-bottom: 6px;
+  z-index: 2;
+  position: relative;
 }
 
-div#menu ul, div#menu ul ul,
-div.navbar ul, div.navbar ul ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+#menu li.global ul {
+  background: #109A8B url(i/v4_global_menu_corner_TR.gif) no-repeat right top;
+  padding-right: 6px;
+  overflow: hidden;
 }
 
-div#menu ul a,
-div.navbar ul a {
-	display: block;
-	margin-right: 1.2em;
-	padding: 0 0.5em;
-	text-decoration: none;
-	font-size: 1.1em;
+#menu li.global ul li {
+  background: #08b9a6;
 }
 
-div#menu ul li.current_page_item a,
-div.navbar ul li.current_page_item a {
-	background: url(i/menu-selected.gif) no-repeat center bottom;
+#menu li.global a.active {
+  border-color: #6AE5CC;
 }
+
+#menu li.global a:hover {
+  border-color: #A6F0DC;
+}
+
+#menu li.events {
+  margin-top: -10px;
+	background: #13558a url(i/v4_events_menu_corner_BL.gif) no-repeat left bottom;
+	padding-bottom: 6px;
+	clear: left;
+}
+
+#menu li.events ul {
+  background: #13558a url(i/v4_events_menu_corner_TR.gif) no-repeat right top;;
+  overflow: hidden;
+  padding-right: 6px;
+}
+
+#menu li.events ul ul {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+
+#menu li.event.active a.active {
+  border-color: #4784F8;
+}
+
+#menu li.event a:hover {
+  border-color: #7299F0;
+}
+
+
+#menu li.event a.year,
+#menu li.event a.year:hover {
+  width: 50px;
+  font-weight: bold;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  margin: 0;
+  padding: .1em 10px;
+  border-color: transparent;
+}
+
+#menu li.active a.year:after {
+  content: "\25be";
+  margin-left: .2em;
+}
+
+#menu li.event {
+  background: #116db6;
+  overflow: hidden;
+  clear: both;
+  display: none;
+  border-top: 1px solid #13558a;
+  float: none;
+}
+
+#menu li.event.active {
+  border-top: none;
+  padding-top: 15px;
+}
+
+#menu li.event.active,
+#menu li.events.expanded li.event {
+  display: block;
+}
+
+#menu li.event a,
+#menu li.event ul {
+  float: left;
+}
+
+
+
+
+
+
 
 #subnav {
-	background-color: #d8efff;
+/*  background-color: #d8efff;*/
 	padding: 1em 0 3em;
 }
 
@@ -667,7 +747,7 @@ div#footer {
 #site-title a {
 	width: 232px;
 	height: 115px;
-	background: url(i/header-logo.gif) no-repeat;
+	background: url(i/v3_head_logo.gif) no-repeat;
 }
 
 /* @end */
