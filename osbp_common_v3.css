@@ -92,6 +92,14 @@ body {
 	color: #ccc;
 }
 
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 a:link {
 	color: #00a8d8;
 }
@@ -208,9 +216,9 @@ dfn {
 	font-style: italic;
 }
 
-a:hover {
+/*a:hover {
 	text-decoration: none;
-}
+}*/
 
 blockquote {
 	background: #f1f9ff;
@@ -618,7 +626,7 @@ div#menu ul li:hover ul {
 
 div#container {
 	width: 960px;
-	margin: 2em auto;
+	margin: 2.5em auto;
 }
 
 div#content {
@@ -626,8 +634,9 @@ div#content {
 	width: 712px;
 	float: right;
 	background: #fff;
-	margin: -2em auto 0;
+	margin: -2.5em auto 0;
 	position: relative;
+	min-height: 300px;
 }
 
 #content .page_title {
@@ -635,8 +644,9 @@ div#content {
 	color:  #222;
 	margin: 0 -20px 20px;
 	background: #edeeef;
-	padding: 0 20px .6em;
+	padding: 0 20px 6px;
 	font-size: 2em;
+	line-height: 1;
 }
 
 .register-now-button {
@@ -676,13 +686,17 @@ div.section_title h2 {
 	font-weight: bold;
 	margin-left: 27px;
 	font-size: 18px;
+	line-height: 1;
+	margin-bottom: ;
 }
 
-div.section_title h2.event_level {
+div.section_title h2.event_level,
+div.section_title h2.event_level a {
 	color: #116db6;
 }
 
-div.section_title h2.global_level {
+div.section_title h2.global_level,
+div.section_title h2.global_level a {
 	color: #08b9a6;
 }
 
@@ -691,6 +705,7 @@ div.section_title h2.global_level {
 div.sidebar {
 	color: #222;
 	font-size: 14px;
+	width: 200px;
 }
 
 #primary.sidebar {
@@ -705,14 +720,16 @@ div.sidebar {
 	display: none;
 }
 
-#primary.sidebar ul.xoxo {
+.sidebar ul.xoxo {
 	margin: 0 0 0 27px;
 }
 
-#primary.sidebar li li a {
-	font-weight: bold;
+.sidebar li li a {
 	color: #6d6e71;
-	text-decoration: none;
+}
+
+.sidebar li li.active {
+	background: url(i/v4_active_subnav.png) left center no-repeat;
 }
 
 div.sidebar div,div.sidebar ul {
@@ -732,6 +749,7 @@ div.sidebar h3 {
 
 div.sidebar li {
 	list-style: none;
+	margin-bottom: 1em;
 }
 
 div.sidebar li form {
@@ -740,27 +758,56 @@ div.sidebar li form {
 }
 
 div.sidebar ul ul {
-	margin: 0 0 0 1.5em;
+	margin: 0 0 0 0;
 }
 
 div.sidebar ul ul li {
 	margin: 0;
-	list-style: disc;
+	padding-left: 15px;
 }
 
 div.sidebar ul ul ul {
-	margin: 0 0 0 0.7em;
+	margin: 0 0 0 1em;
 }
 
 div.sidebar ul ul ul li {
 	list-style: circle;
+	padding: 0;
 }
 
-li.pre-bulletted,
-div.sidebar li.pre-bulletted {
+li.pre-bulletted {
 	list-style: none;
 	position: relative;
 	left: -18px;
+}
+
+div.sidebar li.pre-bulletted {
+	padding: 0;
+	margin-left: -3px;
+}
+
+.sidebar #account-box {
+	padding: 5px;
+	margin-left: -5px;
+}
+
+.sidebar #account-box h3 {
+	font-size: 1em;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.sidebar #account-box .user_actions {
+	font-size: .9em;
+}
+
+.sidebar #account-box .user-photo {
+	float: left;
+	clear: none;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #222;
+	margin: 0 .5em 0 0;
 }
 
 /* @end */
