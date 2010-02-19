@@ -638,7 +638,8 @@ div#content {
 	min-height: 300px;
 }
 
-#content .page_title {
+#content .page_title,
+#content .page-title {
 	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	color:  #222;
 	margin: 0 -20px 20px;
