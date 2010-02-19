@@ -669,14 +669,15 @@ div#content {
 	margin: 0 auto;
 }
 
-.submit-a-proposal-button {
-	width: 204px;
-	height: 39px;
+a.submit-a-proposal-button {
+  width: 200px;
+  font-weight: bold;
+  color: #fff;
+  border: 3px solid #109A8B;
 	display: block;
-	background: url(i/submit_a_proposal.png);
-	overflow: hidden;
-	text-indent: -999px;
 	margin: 0 auto;
+	padding: .5em 1em;
+	background: #08B9A6;
 }
 
 div.section_title {
@@ -728,7 +729,8 @@ div.sidebar {
 	color: #6d6e71;
 }
 
-.sidebar li li.active {
+.sidebar li li.active,
+.sidebar li.current_page_item {
 	background: url(i/v4_active_subnav.png) left center no-repeat;
 }
 
@@ -1020,6 +1022,8 @@ div.sidebar .donate-callout {
 	color: #fff;
 	padding: 10px;
 	max-width: 150px;
+	position: relative;
+	left: -10px;
 }
 
 a.donate-button,
