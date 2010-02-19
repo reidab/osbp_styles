@@ -472,7 +472,7 @@ div.skip-link a:focus {
 }
 
 #menu li.global {
-  margin-left: 71px;
+  margin-left: 75px;
   background: #109A8B url(i/v4_global_nav_BL.gif) no-repeat left bottom;
   padding-bottom: 6px;
   z-index: 2;
@@ -528,18 +528,17 @@ div.skip-link a:focus {
 
 #menu li.event a.year,
 #menu li.event a.year:hover {
-  width: 50px;
+  width: 47px;
   font-weight: bold;
   -webkit-border-top-right-radius: 0;
   -webkit-border-bottom-right-radius: 0;
-  margin: 0;
-  padding: .3em 10px .3em 20px;
+  margin: 0 10px 0 0;
+  padding: .3em 0 .3em 20px;
   border-color: transparent;
 }
 
-#menu li.active a.year:after {
-  content: "\25be";
-  margin-left: .2em;
+#menu li.active a.year {
+	background: url(i/v4_year_dropdown.gif) right center no-repeat;
 }
 
 #menu li.event {
