@@ -796,7 +796,6 @@ div.sidebar li.pre-bulletted {
 .sidebar #account-box h3 {
 	font-size: 1em;
 	font-weight: bold;
-	white-space: nowrap;
 }
 
 .sidebar #account-box .user_actions {
