@@ -88,7 +88,7 @@ a {
 /* @group Colors */
 
 body {
-	background: #191919;
+	background: #fff;
 	color: #ccc;
 }
 
@@ -473,7 +473,7 @@ div.skip-link a:focus {
 
 #menu li.global {
   margin-left: 75px;
-  background: #109A8B url(i/v4_global_nav_BL.gif) no-repeat left bottom;
+  background: #109A8B url(i/v4_global_nav_BL.png) no-repeat left bottom;
   padding-bottom: 6px;
   z-index: 2;
   position: relative;
@@ -499,7 +499,7 @@ div.skip-link a:focus {
 
 #menu li.events {
   margin-top: -13px;
-	background: #13558a url(i/v4_event_nav_BL.gif) no-repeat left bottom;
+	background: #13558a url(i/v4_event_nav_BL.png) no-repeat left bottom;
 	padding-bottom: 6px;
 	clear: left;
 }
@@ -678,6 +678,11 @@ a.submit-a-proposal-button {
 	margin: 0 auto;
 	padding: .5em 1em;
 	background: #08B9A6;
+}
+
+a.submit-a-proposal-button,
+a.submit_a_proposal {
+  display: none !important;
 }
 
 div.section_title {
@@ -1076,7 +1081,7 @@ h2#latest_news_head a {
 }
 
 #frontpage_info {
-	background: url(i/v3_front_info_bg.gif) repeat-x;
+	background: url(i/5_year_background.png) repeat-x;
 	padding: 2.5em 0;
 	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
