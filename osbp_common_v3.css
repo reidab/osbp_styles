@@ -680,11 +680,6 @@ a.submit-a-proposal-button {
 	background: #08B9A6;
 }
 
-a.submit-a-proposal-button,
-a.submit_a_proposal {
-  display: none !important;
-}
-
 div.section_title {
 }
 
