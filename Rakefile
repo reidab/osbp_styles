@@ -1,6 +1,6 @@
 #===[ Configuration ]===================================================
 
-host = 'opensourcebridge.org'
+host = 'bridgepdx@opensourcebridge.org'
 path = '/var/www/bridgepdx_common/'
 
 #===[ Tasks ]===========================================================
