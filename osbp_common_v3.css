@@ -4,14 +4,12 @@
 	http://localhost/web/bridge_styles/osbp_common_v3.css
 	http://ocw.local/themes/bridgepdx/stylesheets/common_css/osbp_common_v3.css
 */
-
 /* Open Source Bridge Common Styles
 	
 	The latest version of this stylesheet can be found at
 	http://github.com/reidab/osbp_styles
 	
 */
-
 /* Color Reference 
 
 	#818285 - gray from logo
@@ -26,1057 +24,742 @@
 	#f1f9ff - even lighter blue, blockquote bg, alt table
 
 */
-
 /* @group Reset */
-
 /* Strict reset here, overrides below. Should get squashed by build process. */
-
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-weight: inherit;
-	font-style: inherit;
-	font-size: 100%;
-	font-family: inherit;
-	vertical-align: baseline;
-}
-
-body {
-	font: 87.5%/1.5em "Helvetica Neue", Arial, Helvetica, "Liberation sans", "Bitstream Vera Sans", sans-serif;
-	background: #fff;
-	margin: 1.5em 0;
-	position: relative;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-caption, th, td {
-	text-align: left;
-	font-weight: 400;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-	content: "";
-}
-
-blockquote, q {
-	quotes: "" "";
-}
-
-a img {
-	border: none;
-}
-
-input,textarea {
-	margin: 0;
-}
-
-/* Removes Firefox imposed outline */
-
-a {
-	outline: none;
-}
-
-/* @end */
-
-/* @group Typograpy */
-
-/* @group Colors */
-
-body {
-	background: #fff;
-	color: #ccc;
-}
-
-a {
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-a {
-	color: #00a8d8;
-}
-
-a:visited {
-	color: #238eae;
-}
-
-/*
-
- @end */
-
-/* @group Headings */
-
-h1 {
-	font-size: 1.65em;
-	line-height: 1.5;
-}
-
-h2 {
-	font-size: 1.5em;
-	margin-bottom: 0.6em;
-}
-
-h2.entry-title a {
-	color: #222;
-	text-decoration: none;
-}
-
-h3 {
-	font-size: 1.35em;
-	line-height: 1;
-	margin-bottom: .7em;
-}
-
-h4 {
-	font-size: 1.15em;
-	line-height: 1.25;
-	margin-bottom: .7em;
-}
-
-h5 {
-	font-size: 1em;
-	margin-bottom: .5em;
-}
-
-h6 {
-	font-size: 1em;
-}
-
-h1, h2, h3 {
-	color: #116db6;
-}
-
-h4, h5, h6 {
-	color: #333;
-}
-
-/* @end */
-
-/* @group Text Elements */
-
-p {
-	margin: 0 0 1.5em;
-}
-
-ul, ol {
-	margin: 0 1.5em 1.5em 1.5em;
-}
-
-ul {
-	list-style-type: circle;
-}
-
-ol {
-	list-style: outside decimal;
-}
-
-dl {
-	margin: 0 0 1.5em 0;
-}
-
-dl dt {
-	font-weight: bold;
-}
-
-dl dd {
-	margin-left: 1.5em;
-}
-
-abbr, acronym {
-	border-bottom: 1px dotted;
-}
-
-address {
-	margin-top: 1.5em;
-	font-style: italic;
-}
-
-cite,em,i {
-	font-style: italic;
-}
-
-del {
-	text-decoration: line-through;
-}
-
-ins {
-	text-decoration: overline;
-}
-
-dfn {
-	border-bottom: 1px dashed;
-	font-style: italic;
-}
-
-/*a:hover {
-	text-decoration: none;
-}*/
-
-blockquote {
-	background: #f1f9ff;
-}
-
-blockquote p {
-	margin: 0 1.5em 1.5em;
-	padding: 0.75em;
-}
-
-sub {
-	bottom: -0.4em;
-	font-size: 0.85em;
-	line-height: 1em;
-	position: relative;
-	vertical-align: baseline;
-}
-
-sup {
-	font-size: 0.85em;
-	line-height: 1em;
-	position: relative;
-	top: -0.4em;
-	vertical-align: baseline;
-}
-
-strong {
-	font-weight: bold;
-}
-
-em, dfn {
-	font-style: italic;
-}
-
-dfn {
-	font-weight: bold;
-}
-
-pre {
-	margin: 0 0 1.5em;
-	padding: 0 0 0 1.5em;
-	white-space: pre;
-}
-
-pre,code,kbd,tt {
-	font: 1em/1.5em Consolas, "Courier New", Courier, monospace;
-}
-
-tt {
-	display: block;
-	margin: 1.5em 0;
-	line-height: 1.5;
-}
-
-hr {
-	border: none;
-	border-bottom: 1px solid #c6d3dd;
-}
-
-/* @end */
-
-/* @group Tables */
-
-table {
-	margin-bottom: 1.5em;
-}
-
-caption {
-	font-style: italic;
-	text-align: left;
-}
-
-tr.alt td,
-tr.even td {
-	background: #f1f9ff;
-}
-
-td {
-	padding: 0.333em;
-	vertical-align: middle;
-}
-
-th {
-	font-weight: 700;
-	padding: 0.333em;
-	vertical-align: middle;
-}
-
-/* @end */
-
-/* @group Forms */
-
-input[type=text], input[type=password], textarea {
-	font-style: inherit;
-	font-size: inherit;
-	font-family: inherit;
-}
-
-.help {
-	margin: 0;
-	color: #999;
-	font-size: .85em;
-}
-
-/* @end */
-
-/* @end */
-
-/* @group Common
-
-Classes */
-
-.clear {
-	clear: both;
-}
-
-.alignright,img.alignright {
-	float: right;
-	margin: 0 0 0 1em;
-}
-
-.alignleft,img.alignleft {
-	float: left;
-	margin: 0 1em 0 0;
-}
-
-.aligncenter,img.aligncenter {
-	display: block;
-	margin: 0 auto;
-	text-align: center;
-}
-
-.entry-date abbr {
-	border-bottom: none;
-}
-
-/* @end */
-
-/* @group Layout */
-
-body {
-	margin: 0;
-}
-
-#wrapper {
-	position: relative;
-	background: #edeeef;
-	color: #191919;
-}
-
-.inner_container {
-  position: relative;
-	width: 960px;
-	margin: 0 auto;
-	padding: 0 10px;
-}
-
-/* @group Header */
-
-#header {
-	background: url(i/v3_header_bg.gif) repeat-x #fff;
-}
-
-#header .inner_container {
-	padding: 30px 0 17px;
-	position: relative;
-	height: 94px;
-}
-
-#site-title {
-	margin: 0;
-	padding: 0;
-	float: left;
-}
-
-#site-description {
-	float: right;
-	text-align: right;
-	margin-top: 5px;
-}
-
-#site-description h2 {
-	color: #222;
-	font-size: 1.3em;
-	margin: 0;
-}
-
-#conference-date-location {
-	color: #08b9a6;
-	font-weight: bold;
-}
-
-#header-reg-now {
-	color: #fff;
-	background: #08b9a6 url(i/v3_head_reg_shadow.gif) no-repeat left bottom;
-	text-decoration: none;
-	font-weight: bold;
-	border-right: 4px solid #109a8b;
-	position: absolute;
-	top: 7px;
-	right: 0;
-	display: block;
-	padding: 0 1em .5em;
-}
-
-div.skip-link a {
-	position: absolute;
-	right: 0;
-	top: -99px;
-	background: #116db6;
-	color: #fff;
-	padding: .5em;
-	font-size: .7em;
-	text-decoration: none;
-}
-
-div.skip-link a:focus {
-	top: 0;
-}
-
-/* @end */
-
-/* @group Menu */
-
-#menu {
-	color: #fff;
-	position: absolute;
-	left: 218px;
-	top: -64px;
-	z-index: 99;
-}
-
-#menu,
-#menu ul {
+html, body {
   margin: 0;
   padding: 0;
-}
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
 
-#menu li {
-  list-style: none;
-  margin: 0;
-  float: left;
-}
+body.wordpress, body.ocw {
+  margin: 1.5em 0; }
 
-#menu li a {
-  display: block;
-  padding: .4em .8em;
-  color: #fff;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-}
+body.mediawiki {
+  background: #fff; }
+  body.mediawiki #mw-whole-page {
+    background: #f6f6f6;
+    position: relative;
+    top: 2em; }
 
-#menu li.global {
-  margin-left: 75px;
-  background: #109A8B url(i/v4_global_nav_BL.png) no-repeat left bottom;
-  padding-bottom: 6px;
-  z-index: 2;
+body.wordpress, body.ocw, #mw-osbridge-header {
+  font: 87.5%/1.5em "Helvetica Neue", Arial, Helvetica, "Liberation sans", "Bitstream Vera Sans", sans-serif;
+  background: #fff;
   position: relative;
-}
-
-#menu li.global ul {
-  background: #109A8B url(i/v4_global_nav_TR.gif) no-repeat right top;
-  padding-right: 6px;
-  overflow: hidden;
-}
-
-#menu li.global ul li {
-  background: #08b9a6;
-}
-
-#menu li.global a.active {
-  border-color: #6AE5CC;
-}
-
-#menu li.global a:hover {
-  border-color: #A6F0DC;
-}
-
-#menu li.events {
-  margin-top: -13px;
-	background: #13558a url(i/v4_event_nav_BL.png) no-repeat left bottom;
-	padding-bottom: 6px;
-	clear: left;
-}
-
-#menu li.events ul {
-  background: #13558a url(i/v4_event_nav_TR.gif) no-repeat right top;;
-  overflow: hidden;
-  padding-right: 6px;
-}
-
-#menu li.events ul ul {
-  border: none;
-  background: transparent;
-  padding: 0;
-}
-
-
-#menu li.event.active a.active {
-  border-color: #4784F8;
-}
-
-#menu li.event a:hover {
-  border-color: #7299F0;
-}
-
-
-#menu li.event a.year,
-#menu li.event a.year:hover {
-  width: 47px;
-  font-weight: bold;
-  -webkit-border-top-right-radius: 0;
-  -webkit-border-bottom-right-radius: 0;
-  margin: 0 10px 0 0;
-  padding: .3em 0 .3em 20px;
-  border-color: transparent;
-}
-
-#menu li.active a.year {
-	background: url(i/v4_year_dropdown.gif) right center no-repeat;
-}
-
-#menu li.event {
-  background: #116db6;
-  overflow: hidden;
-  clear: both;
-  display: none;
-  border-top: 1px solid #13558a;
-  float: none;
-}
-
-#menu li.event.active {
-  border-top: none;
-  padding-top: 15px;
-}
-
-#menu li.event.active,
-#menu li.events.expanded li.event {
-  display: block;
-}
-
-#menu li.event a,
-#menu li.event ul {
-  float: left;
-}
-
-
-
-
-
-
-
-#subnav {
-/*  background-color: #d8efff;*/
-	padding: 1em 0 3em;
-}
-
-div#subnav ul a {
-	margin: 0;
-	margin-left: 1.5em;
-}
-
-#subnav ul {
-	float: right;
-	margin: -2.2em 280px 0 0 ;
-}
-
-#subnav a,
-#subnav a:link,
-#subnav a:visited,
-#subnav a:active {
-	color: #222;
-}
-
-
-#subnav h2 {
-	line-height: 2;
-	margin: 0;
-	color: #222;
-	padding: 0 270px 0 25px;
-}
-
-div#subnav ul li.current_page_item a,
-div#subnav ul li.selected a {
-	background: no-repeat;
-	font-weight: bold;
-}
-
-div#menu ul ul ul a {
-	font-style: italic;
-}
-
-div#menu ul li ul,
-div.navbar ul li ul {
-	left: -999em;
-	position: absolute;
-}
-
-div#menu ul li:hover ul {
-	left: auto;
-}
-
-/* @end */
-
-div#container {
-	width: 960px;
-	margin: 2.5em auto;
-}
-
-div#content {
-	padding: 0 20px 20px;
-	width: 712px;
-	float: right;
-	background: #fff;
-	margin: -2.5em auto 0;
-	position: relative;
-	min-height: 300px;
-}
-
-#content .page_title,
-#content .page-title {
-	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	color:  #222;
-	margin: 0 -20px 20px;
-	background: #edeeef;
-	padding: 0 20px 15px;
-	font-size: 2em;
-	line-height: 1.3;
-}
-
-.register-now-button {
-	width: 204px;
-	height: 48px;
-	display: block;
-	background: url(i/register_now.png) no-repeat;
-	overflow: hidden;
-	text-indent: -999px;
-	margin: 0 auto;
-}
-
-.book-now-button {
-	width: 204px;
-	height: 48px;
-	display: block;
-	background: url(i/book_a_room.png) no-repeat;
-	overflow: hidden;
-	text-indent: -999px;
-	margin: 0 auto;
-}
-
-a.submit-a-proposal-button {
-  width: 200px;
-  font-weight: bold;
-  color: #fff;
-  border: 3px solid #109A8B;
-	display: block;
-	margin: 0 auto;
-	padding: .5em 1em;
-	background: #08B9A6;
-}
-
-div.section_title {
-}
-
-div.section_title h2 {
-	font-weight: bold;
-	margin-left: 27px;
-	font-size: 18px;
-	line-height: 1;
-	margin-bottom: ;
-}
-
-div.section_title h2.event_level,
-div.section_title h2.event_level a {
-	color: #116db6;
-}
-
-div.section_title h2.global_level,
-div.section_title h2.global_level a {
-	color: #08b9a6;
-}
-
-/* @group Sidebar */
-
-div.sidebar {
-	color: #222;
-	font-size: 14px;
-	width: 200px;
-}
-
-#primary.sidebar {
-
-}
-
-#subscribe-to {
-	padding: 1em;
-}
-
-#subscribe-to h3 {
-	display: none;
-}
-
-.sidebar ul.xoxo {
-	margin: 0 0 0 27px;
-}
-
-.sidebar li li a {
-	color: #6d6e71;
-}
-
-.sidebar li li.active,
-.sidebar li.current_page_item {
-	background: url(i/v4_active_subnav.png) left center no-repeat;
-}
-
-div.sidebar div,div.sidebar ul {
-	margin: 0;
-	padding: 0;
-}
-
-/*div#secondary {
-	clear: right;
-}*/
-
-div.sidebar h3 {
-	margin: 0;
-	font-size: 1.25em;
-	color: #222;
-}
-
-div.sidebar li {
-	list-style: none;
-	margin-bottom: 1em;
-}
-
-div.sidebar li form {
-	margin: 0.2em 0 0;
-	padding: 0;
-}
-
-div.sidebar ul ul {
-	margin: 0 0 0 0;
-}
-
-div.sidebar ul ul li {
-	margin: 0;
-	padding-left: 15px;
-}
-
-div.sidebar ul ul ul {
-	margin: 0 0 0 1em;
-}
-
-div.sidebar ul ul ul li {
-	list-style: circle;
-	padding: 0;
-}
-
-li.pre-bulletted {
-	list-style: none;
-	position: relative;
-	left: -18px;
-}
-
-div.sidebar li.pre-bulletted {
-	padding: 0;
-	margin-left: -3px;
-}
-
-.sidebar #account-box {
-	padding: 5px;
-	margin-left: -5px;
-}
-
-.sidebar #account-box h3 {
-	font-size: 1em;
-	font-weight: bold;
-}
-
-.sidebar #account-box .user_actions {
-	font-size: .9em;
-}
-
-.sidebar #account-box .user-photo {
-	float: left;
-	clear: none;
-	width: 30px;
-	height: 30px;
-	border: 1px solid #222;
-	margin: 0 .5em 0 0;
-}
-
-/* @end */
-
-div#footer {
-	clear: both;
-	width: 100%;
-	background: #191919 url(i/v3_icon_footer.gif) no-repeat center bottom;
-	padding: 25px 0 60px;
-	text-align: center;
-	color: #ccc;
-	margin: 30px 0 0;
-}
-
-/* @end */
-
-/* @group Image Replacements */
-
-#site-title a {
-	overflow: hidden;
-	text-indent: -999px;
-	display: block;
-}
-
-#site-title a {
-	width: 189px;
-	height: 94px;
-	background: url(i/v4_header_logo.gif) no-repeat;
-}
-
-/* @end */
-
-/* @group Link Annotations */
-
-a.chicklet {
-	display: block;
-	padding: 3px 0 0 50px;
-	min-height: 23px;
-	background-position: 0 center;
-	background-repeat: no-repeat;
-}
-
-a.chicklet.twitter {
-	background-image: url(i/twitter.png);
-}
-
-a.chicklet.facebook {
-	background-image: url(i/facebook.png);
-}
-
-a.chicklet.dopplr {
-	background-image: url(i/dopplr.png);
-}
-
-a.chicklet.identica {
-	background-image: url(i/identica.png);
-}
-
-a.chicklet.linkedin {
-	background-image: url(i/linkedin.png);
-}
-
-a.chicklet.rss {
-	background-image: url(i/rss.png);
-}
-
-a.chicklet.friendfeed {
-	background-image: url(i/friendfeed.png);
-}
-
-a.feedburner {
-	margin-left: 50px;
-}
-
-a.chicklet.calendar {
-	background-image: url(i/calendar.png);
-}
-
-/* @end */
-
-/* @group Rails Common Elements */
-
-/* @group Flash Notices */
-
-.flash p {
-	margin: 0.5em 0;
-	padding: 0.5em;
-}
-
-.flash .notice {
-	color: #555555;
-	background: #f1f9ff;
-	border: 1px solid #116db6;
-}
-
-.flash .success {
-	color: #555555;
-	background: #e1ffe8;
-	border: 1px solid #08b9a6;
-}
-
-.flash .failure {
-	color: #555555;
-	background: #ffeded;
-	border: 1px solid #c60000;
-}
-
-/* @end */
-
-/* @group Errors */
-
-#errorExplanation {
-	border: 2px solid #c60000;
-	padding: 7px;
-	padding-bottom: 12px;
-	margin-bottom: 20px;
-	background-color: #;
-}
-
-#errorExplanation h2 {
-	padding: .5em 1em;
-	font-size: 1em;
-	margin: -7px;
-	background-color: #c60000;
-	color: #fff;
-}
-
-#errorExplanation p {
-	color: #333;
-	margin: 1em .5em .5em;
-}
-
-#errorExplanation ul {
-	margin-bottom: 0;
-}
-
-#errorExplanation li {
-	font-size: .9em;
-}
-
-.fieldWithErrors {
-	margin: 0;
-	display: inline;
-	background-color: inherit;
-}
-
-.fieldWithErrors label {
-	color: #c60000;
-}
-
-.fieldWithErrors textarea,
-  .fieldWithErrors input[type=text],
-  .fieldWithErrors input[type=checkbox] {
-	border: 2px solid #c60000;
-}
-
-/* @end */
-
-/* @end */
-
-.register-callout,
-div.sidebar div.register-callout {
-	background: #08b9a6;
-	color: #fff;
-	padding: 10px;
-	margin-bottom: 20px;
-	max-width: 150px;
-}
-
-a.register-button,
-a.register-button:link,
-a.register-button:visited,
-a.register-button:active {
-	margin-top: 10px;
-	display: block;
-	text-align: center;
-	font-weight: bold;
-	padding: .5em;
-	background: #109a8b;
-	color: #fff;
-	text-decoration: none;
-}
-
-.hotel-callout,
-div.sidebar .hotel-callout {
-	background: #0bacd9;
-	color: #fff;
-	padding: 10px;
-	max-width: 150px;
-	margin-bottom: 20px;
-}
-
-a.book-room-button,
-a.book-room-button:link,
-a.book-room-button:visited,
-a.book-room-button:active {
-	margin-top: 10px;
-	display: block;
-	text-align: center;
-	font-weight: bold;
-	padding: .5em;
-	background: #238db2;
-	color: #fff;
-	text-decoration: none;
-}
-
-.donate-callout,
-div.sidebar .donate-callout {
-	background: #a05cda;
-	color: #fff;
-	padding: 10px;
-	max-width: 150px;
-	position: relative;
-	left: -10px;
-}
-
-a.donate-button,
-a.donate-button:link,
-a.donate-button:visited,
-a.donate-button:active {
-	margin-top: 10px;
-	display: block;
-	text-align: center;
-	font-weight: bold;
-	padding: .5em;
-	background: #7c47a9;
-	color: #fff;
-	text-decoration: none;
-}
-
-.frontpage_snippet {
-	padding: 0 0 1em 60px;
-}
-
-#citizen_snippet {
-	background: url(i/v3_icon_citizen.gif) no-repeat 7px 3px;
-}
-
-#tracks_snippet {
-	background: url(i/v3_icon_tracks.gif) no-repeat 7px 3px;
-}
-
-#lounge_snippet {
-	background: url(i/v3_icon_lounge.png) no-repeat 7px 0;
-}
-
-#volunteer_snippet {
-	background: url(i/v3_icon_volunteers.png) no-repeat 7px 3px;
-}
-
-h2#latest_news_head {
-	font-weight: bold;
-	color: #222;
-	background: url(i/v3_icon_news.png) no-repeat;
-	min-height: 32px;
-	padding: 5px 0 0 40px;
-	font-size: 1.25em;
-	border-bottom: 1px solid #eee;
-}
-
-h2#latest_news_head a {
-	font-size: .7em;
-	float: right;
-	font-weight: normal;
-}
-
-#frontpage_info {
-	background: url(i/5_year_background.png) repeat-x;
-	padding: 2.5em 0;
-	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-}
+  /* Removes Firefox imposed outline */
+  /* @end */
+  /* @group Typograpy */
+  /* @group Colors */
+  /*
+
+  @end */
+  /* @group Headings */
+  /* @end */
+  /* @group Text Elements */
+  /*a:hover {
+    text-decoration: none;
+  }*/
+  /* @end */
+  /* @group Tables */
+  /* @end */
+  /* @group Forms */
+  /* @end */
+  /* @end */
+  /* @group Common
+
+  Classes */
+  /* @end */
+  /* @group Layout */
+  /* @group Header */
+  /* @end */
+  /* @group Menu */
+  /* @end */
+  /* @group Sidebar */
+  /*div#secondary {
+    clear: right;
+  }*/
+  /* @end */
+  /* @end */
+  /* @group Image Replacements */
+  /* @end */
+  /* @group Link Annotations */
+  /* @end */
+  /* @group Rails Common Elements */
+  /* @group Flash Notices */
+  /* @end */
+  /* @group Errors */
+  /* @end */
+  /* @end */ }
+  body.wordpress html, body.wordpress body, body.wordpress div, body.wordpress span, body.wordpress object, body.wordpress iframe, body.wordpress h1, body.wordpress h2, body.wordpress h3, body.wordpress h4, body.wordpress h5, body.wordpress h6, body.wordpress p, body.wordpress blockquote, body.wordpress pre, body.wordpress a, body.wordpress abbr, body.wordpress acronym, body.wordpress address, body.wordpress code, body.wordpress del, body.wordpress dfn, body.wordpress em, body.wordpress img, body.wordpress q, body.wordpress dl, body.wordpress dt, body.wordpress dd, body.wordpress ol, body.wordpress ul, body.wordpress li, body.wordpress fieldset, body.wordpress form, body.wordpress label, body.wordpress legend, body.wordpress table, body.wordpress caption, body.wordpress tbody, body.wordpress tfoot, body.wordpress thead, body.wordpress tr, body.wordpress th, body.wordpress td, body.ocw html, body.ocw body, body.ocw div, body.ocw span, body.ocw object, body.ocw iframe, body.ocw h1, body.ocw h2, body.ocw h3, body.ocw h4, body.ocw h5, body.ocw h6, body.ocw p, body.ocw blockquote, body.ocw pre, body.ocw a, body.ocw abbr, body.ocw acronym, body.ocw address, body.ocw code, body.ocw del, body.ocw dfn, body.ocw em, body.ocw img, body.ocw q, body.ocw dl, body.ocw dt, body.ocw dd, body.ocw ol, body.ocw ul, body.ocw li, body.ocw fieldset, body.ocw form, body.ocw label, body.ocw legend, body.ocw table, body.ocw caption, body.ocw tbody, body.ocw tfoot, body.ocw thead, body.ocw tr, body.ocw th, body.ocw td, #mw-osbridge-header html, #mw-osbridge-header body, #mw-osbridge-header div, #mw-osbridge-header span, #mw-osbridge-header object, #mw-osbridge-header iframe, #mw-osbridge-header h1, #mw-osbridge-header h2, #mw-osbridge-header h3, #mw-osbridge-header h4, #mw-osbridge-header h5, #mw-osbridge-header h6, #mw-osbridge-header p, #mw-osbridge-header blockquote, #mw-osbridge-header pre, #mw-osbridge-header a, #mw-osbridge-header abbr, #mw-osbridge-header acronym, #mw-osbridge-header address, #mw-osbridge-header code, #mw-osbridge-header del, #mw-osbridge-header dfn, #mw-osbridge-header em, #mw-osbridge-header img, #mw-osbridge-header q, #mw-osbridge-header dl, #mw-osbridge-header dt, #mw-osbridge-header dd, #mw-osbridge-header ol, #mw-osbridge-header ul, #mw-osbridge-header li, #mw-osbridge-header fieldset, #mw-osbridge-header form, #mw-osbridge-header label, #mw-osbridge-header legend, #mw-osbridge-header table, #mw-osbridge-header caption, #mw-osbridge-header tbody, #mw-osbridge-header tfoot, #mw-osbridge-header thead, #mw-osbridge-header tr, #mw-osbridge-header th, #mw-osbridge-header td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline; }
+  body.wordpress table, body.ocw table, #mw-osbridge-header table {
+    border-collapse: collapse;
+    border-spacing: 0; }
+  body.wordpress caption, body.wordpress th, body.wordpress td, body.ocw caption, body.ocw th, body.ocw td, #mw-osbridge-header caption, #mw-osbridge-header th, #mw-osbridge-header td {
+    text-align: left;
+    font-weight: 400; }
+  body.wordpress blockquote:before, body.wordpress blockquote:after, body.wordpress q:before, body.wordpress q:after, body.ocw blockquote:before, body.ocw blockquote:after, body.ocw q:before, body.ocw q:after, #mw-osbridge-header blockquote:before, #mw-osbridge-header blockquote:after, #mw-osbridge-header q:before, #mw-osbridge-header q:after {
+    content: ""; }
+  body.wordpress blockquote, body.wordpress q, body.ocw blockquote, body.ocw q, #mw-osbridge-header blockquote, #mw-osbridge-header q {
+    quotes: "" ""; }
+  body.wordpress a img, body.ocw a img, #mw-osbridge-header a img {
+    border: none; }
+  body.wordpress input, body.wordpress textarea, body.ocw input, body.ocw textarea, #mw-osbridge-header input, #mw-osbridge-header textarea {
+    margin: 0; }
+  body.wordpress a, body.ocw a, #mw-osbridge-header a {
+    outline: none; }
+  body.wordpress body, body.ocw body, #mw-osbridge-header body {
+    background: #fff;
+    color: #ccc; }
+  body.wordpress a, body.ocw a, #mw-osbridge-header a {
+    text-decoration: none; }
+  body.wordpress a:hover, body.ocw a:hover, #mw-osbridge-header a:hover {
+    text-decoration: underline; }
+  body.wordpress a, body.ocw a, #mw-osbridge-header a {
+    color: #00a8d8; }
+  body.wordpress a:visited, body.ocw a:visited, #mw-osbridge-header a:visited {
+    color: #238eae; }
+  body.wordpress h1, body.ocw h1, #mw-osbridge-header h1 {
+    font-size: 1.65em;
+    line-height: 1.5; }
+  body.wordpress h2, body.ocw h2, #mw-osbridge-header h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.6em; }
+  body.wordpress h2.entry-title a, body.ocw h2.entry-title a, #mw-osbridge-header h2.entry-title a {
+    color: #222;
+    text-decoration: none; }
+  body.wordpress h3, body.ocw h3, #mw-osbridge-header h3 {
+    font-size: 1.35em;
+    line-height: 1;
+    margin-bottom: .7em; }
+  body.wordpress h4, body.ocw h4, #mw-osbridge-header h4 {
+    font-size: 1.15em;
+    line-height: 1.25;
+    margin-bottom: .7em; }
+  body.wordpress h5, body.ocw h5, #mw-osbridge-header h5 {
+    font-size: 1em;
+    margin-bottom: .5em; }
+  body.wordpress h6, body.ocw h6, #mw-osbridge-header h6 {
+    font-size: 1em; }
+  body.wordpress h1, body.wordpress h2, body.wordpress h3, body.ocw h1, body.ocw h2, body.ocw h3, #mw-osbridge-header h1, #mw-osbridge-header h2, #mw-osbridge-header h3 {
+    color: #116db6; }
+  body.wordpress h4, body.wordpress h5, body.wordpress h6, body.ocw h4, body.ocw h5, body.ocw h6, #mw-osbridge-header h4, #mw-osbridge-header h5, #mw-osbridge-header h6 {
+    color: #333; }
+  body.wordpress p, body.ocw p, #mw-osbridge-header p {
+    margin: 0 0 1.5em; }
+  body.wordpress ul, body.wordpress ol, body.ocw ul, body.ocw ol, #mw-osbridge-header ul, #mw-osbridge-header ol {
+    margin: 0 1.5em 1.5em 1.5em; }
+  body.wordpress ul, body.ocw ul, #mw-osbridge-header ul {
+    list-style-type: circle; }
+  body.wordpress ol, body.ocw ol, #mw-osbridge-header ol {
+    list-style: outside decimal; }
+  body.wordpress dl, body.ocw dl, #mw-osbridge-header dl {
+    margin: 0 0 1.5em 0; }
+  body.wordpress dl dt, body.ocw dl dt, #mw-osbridge-header dl dt {
+    font-weight: bold; }
+  body.wordpress dl dd, body.ocw dl dd, #mw-osbridge-header dl dd {
+    margin-left: 1.5em; }
+  body.wordpress abbr, body.wordpress acronym, body.ocw abbr, body.ocw acronym, #mw-osbridge-header abbr, #mw-osbridge-header acronym {
+    border-bottom: 1px dotted; }
+  body.wordpress address, body.ocw address, #mw-osbridge-header address {
+    margin-top: 1.5em;
+    font-style: italic; }
+  body.wordpress cite, body.wordpress em, body.wordpress i, body.ocw cite, body.ocw em, body.ocw i, #mw-osbridge-header cite, #mw-osbridge-header em, #mw-osbridge-header i {
+    font-style: italic; }
+  body.wordpress del, body.ocw del, #mw-osbridge-header del {
+    text-decoration: line-through; }
+  body.wordpress ins, body.ocw ins, #mw-osbridge-header ins {
+    text-decoration: overline; }
+  body.wordpress dfn, body.ocw dfn, #mw-osbridge-header dfn {
+    border-bottom: 1px dashed;
+    font-style: italic; }
+  body.wordpress blockquote, body.ocw blockquote, #mw-osbridge-header blockquote {
+    background: #f1f9ff; }
+  body.wordpress blockquote p, body.ocw blockquote p, #mw-osbridge-header blockquote p {
+    margin: 0 1.5em 1.5em;
+    padding: 0.75em; }
+  body.wordpress sub, body.ocw sub, #mw-osbridge-header sub {
+    bottom: -0.4em;
+    font-size: 0.85em;
+    line-height: 1em;
+    position: relative;
+    vertical-align: baseline; }
+  body.wordpress sup, body.ocw sup, #mw-osbridge-header sup {
+    font-size: 0.85em;
+    line-height: 1em;
+    position: relative;
+    top: -0.4em;
+    vertical-align: baseline; }
+  body.wordpress strong, body.ocw strong, #mw-osbridge-header strong {
+    font-weight: bold; }
+  body.wordpress em, body.wordpress dfn, body.ocw em, body.ocw dfn, #mw-osbridge-header em, #mw-osbridge-header dfn {
+    font-style: italic; }
+  body.wordpress dfn, body.ocw dfn, #mw-osbridge-header dfn {
+    font-weight: bold; }
+  body.wordpress pre, body.ocw pre, #mw-osbridge-header pre {
+    margin: 0 0 1.5em;
+    padding: 0 0 0 1.5em;
+    white-space: pre; }
+  body.wordpress pre, body.wordpress code, body.wordpress kbd, body.wordpress tt, body.ocw pre, body.ocw code, body.ocw kbd, body.ocw tt, #mw-osbridge-header pre, #mw-osbridge-header code, #mw-osbridge-header kbd, #mw-osbridge-header tt {
+    font: 1em/1.5em Consolas, "Courier New", Courier, monospace; }
+  body.wordpress tt, body.ocw tt, #mw-osbridge-header tt {
+    display: block;
+    margin: 1.5em 0;
+    line-height: 1.5; }
+  body.wordpress hr, body.ocw hr, #mw-osbridge-header hr {
+    border: none;
+    border-bottom: 1px solid #c6d3dd; }
+  body.wordpress table, body.ocw table, #mw-osbridge-header table {
+    margin-bottom: 1.5em; }
+  body.wordpress caption, body.ocw caption, #mw-osbridge-header caption {
+    font-style: italic;
+    text-align: left; }
+  body.wordpress tr.alt td,
+  body.wordpress tr.even td, body.ocw tr.alt td,
+  body.ocw tr.even td, #mw-osbridge-header tr.alt td,
+  #mw-osbridge-header tr.even td {
+    background: #f1f9ff; }
+  body.wordpress td, body.ocw td, #mw-osbridge-header td {
+    padding: 0.333em;
+    vertical-align: middle; }
+  body.wordpress th, body.ocw th, #mw-osbridge-header th {
+    font-weight: 700;
+    padding: 0.333em;
+    vertical-align: middle; }
+  body.wordpress input[type=text], body.wordpress input[type=password], body.wordpress textarea, body.ocw input[type=text], body.ocw input[type=password], body.ocw textarea, #mw-osbridge-header input[type=text], #mw-osbridge-header input[type=password], #mw-osbridge-header textarea {
+    font-style: inherit;
+    font-size: inherit;
+    font-family: inherit; }
+  body.wordpress .help, body.ocw .help, #mw-osbridge-header .help {
+    margin: 0;
+    color: #999;
+    font-size: .85em; }
+  body.wordpress .clear, body.ocw .clear, #mw-osbridge-header .clear {
+    clear: both; }
+  body.wordpress .alignright, body.wordpress img.alignright, body.ocw .alignright, body.ocw img.alignright, #mw-osbridge-header .alignright, #mw-osbridge-header img.alignright {
+    float: right;
+    margin: 0 0 0 1em; }
+  body.wordpress .alignleft, body.wordpress img.alignleft, body.ocw .alignleft, body.ocw img.alignleft, #mw-osbridge-header .alignleft, #mw-osbridge-header img.alignleft {
+    float: left;
+    margin: 0 1em 0 0; }
+  body.wordpress .aligncenter, body.wordpress img.aligncenter, body.ocw .aligncenter, body.ocw img.aligncenter, #mw-osbridge-header .aligncenter, #mw-osbridge-header img.aligncenter {
+    display: block;
+    margin: 0 auto;
+    text-align: center; }
+  body.wordpress .entry-date abbr, body.ocw .entry-date abbr, #mw-osbridge-header .entry-date abbr {
+    border-bottom: none; }
+  body.wordpress body, body.ocw body, #mw-osbridge-header body {
+    margin: 0; }
+  body.wordpress #wrapper, body.ocw #wrapper, #mw-osbridge-header #wrapper {
+    position: relative;
+    background: #edeeef;
+    color: #191919; }
+  body.wordpress .inner_container, body.ocw .inner_container, #mw-osbridge-header .inner_container {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px; }
+  body.wordpress #header, body.ocw #header, #mw-osbridge-header #header {
+    background: url(i/v3_header_bg.gif) repeat-x #fff; }
+  body.wordpress #header .inner_container, body.ocw #header .inner_container, #mw-osbridge-header #header .inner_container {
+    padding: 30px 0 17px;
+    position: relative;
+    height: 94px; }
+  body.wordpress #site-title, body.ocw #site-title, #mw-osbridge-header #site-title {
+    margin: 0;
+    padding: 0;
+    float: left; }
+  body.wordpress #site-description, body.ocw #site-description, #mw-osbridge-header #site-description {
+    float: right;
+    text-align: right;
+    margin-top: 5px; }
+  body.wordpress #site-description h2, body.ocw #site-description h2, #mw-osbridge-header #site-description h2 {
+    color: #222;
+    font-size: 1.3em;
+    margin: 0; }
+  body.wordpress #conference-date-location, body.ocw #conference-date-location, #mw-osbridge-header #conference-date-location {
+    color: #08b9a6;
+    font-weight: bold; }
+  body.wordpress #header-reg-now, body.ocw #header-reg-now, #mw-osbridge-header #header-reg-now {
+    color: #fff;
+    background: #08b9a6 url(i/v3_head_reg_shadow.gif) no-repeat left bottom;
+    text-decoration: none;
+    font-weight: bold;
+    border-right: 4px solid #109a8b;
+    position: absolute;
+    top: 7px;
+    right: 0;
+    display: block;
+    padding: 0 1em .5em; }
+  body.wordpress div.skip-link a, body.ocw div.skip-link a, #mw-osbridge-header div.skip-link a {
+    position: absolute;
+    right: 0;
+    top: -99px;
+    background: #116db6;
+    color: #fff;
+    padding: .5em;
+    font-size: .7em;
+    text-decoration: none; }
+  body.wordpress div.skip-link a:focus, body.ocw div.skip-link a:focus, #mw-osbridge-header div.skip-link a:focus {
+    top: 0; }
+  body.wordpress #menu, body.ocw #menu, #mw-osbridge-header #menu {
+    color: #fff;
+    position: absolute;
+    left: 218px;
+    top: -64px;
+    z-index: 99; }
+  body.wordpress #menu,
+  body.wordpress #menu ul, body.ocw #menu,
+  body.ocw #menu ul, #mw-osbridge-header #menu,
+  #mw-osbridge-header #menu ul {
+    margin: 0;
+    padding: 0; }
+  body.wordpress #menu li, body.ocw #menu li, #mw-osbridge-header #menu li {
+    list-style: none;
+    margin: 0;
+    float: left; }
+  body.wordpress #menu li a, body.ocw #menu li a, #mw-osbridge-header #menu li a {
+    display: block;
+    padding: .4em .8em;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent; }
+  body.wordpress #menu li.global, body.ocw #menu li.global, #mw-osbridge-header #menu li.global {
+    margin-left: 75px;
+    background: #109A8B url(i/v4_global_nav_BL.png) no-repeat left bottom;
+    padding-bottom: 6px;
+    z-index: 2;
+    position: relative; }
+  body.wordpress #menu li.global ul, body.ocw #menu li.global ul, #mw-osbridge-header #menu li.global ul {
+    background: #109A8B url(i/v4_global_nav_TR.gif) no-repeat right top;
+    padding-right: 6px;
+    overflow: hidden; }
+  body.wordpress #menu li.global ul li, body.ocw #menu li.global ul li, #mw-osbridge-header #menu li.global ul li {
+    background: #08b9a6; }
+  body.wordpress #menu li.global a.active, body.ocw #menu li.global a.active, #mw-osbridge-header #menu li.global a.active {
+    border-color: #6AE5CC; }
+  body.wordpress #menu li.global a:hover, body.ocw #menu li.global a:hover, #mw-osbridge-header #menu li.global a:hover {
+    border-color: #A6F0DC; }
+  body.wordpress #menu li.events, body.ocw #menu li.events, #mw-osbridge-header #menu li.events {
+    margin-top: -13px;
+    background: #13558a url(i/v4_event_nav_BL.png) no-repeat left bottom;
+    padding-bottom: 6px;
+    clear: left; }
+  body.wordpress #menu li.events ul, body.ocw #menu li.events ul, #mw-osbridge-header #menu li.events ul {
+    background: #13558a url(i/v4_event_nav_TR.gif) no-repeat right top;
+    overflow: hidden;
+    padding-right: 6px; }
+  body.wordpress #menu li.events ul ul, body.ocw #menu li.events ul ul, #mw-osbridge-header #menu li.events ul ul {
+    border: none;
+    background: transparent;
+    padding: 0; }
+  body.wordpress #menu li.event.active a.active, body.ocw #menu li.event.active a.active, #mw-osbridge-header #menu li.event.active a.active {
+    border-color: #4784F8; }
+  body.wordpress #menu li.event a:hover, body.ocw #menu li.event a:hover, #mw-osbridge-header #menu li.event a:hover {
+    border-color: #7299F0; }
+  body.wordpress #menu li.event a.year,
+  body.wordpress #menu li.event a.year:hover, body.ocw #menu li.event a.year,
+  body.ocw #menu li.event a.year:hover, #mw-osbridge-header #menu li.event a.year,
+  #mw-osbridge-header #menu li.event a.year:hover {
+    width: 47px;
+    font-weight: bold;
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    margin: 0 10px 0 0;
+    padding: .3em 0 .3em 20px;
+    border-color: transparent; }
+  body.wordpress #menu li.active a.year, body.ocw #menu li.active a.year, #mw-osbridge-header #menu li.active a.year {
+    background: url(i/v4_year_dropdown.gif) right center no-repeat; }
+  body.wordpress #menu li.event, body.ocw #menu li.event, #mw-osbridge-header #menu li.event {
+    background: #116db6;
+    overflow: hidden;
+    clear: both;
+    display: none;
+    border-top: 1px solid #13558a;
+    float: none; }
+  body.wordpress #menu li.event.active, body.ocw #menu li.event.active, #mw-osbridge-header #menu li.event.active {
+    border-top: none;
+    padding-top: 15px; }
+  body.wordpress #menu li.event.active,
+  body.wordpress #menu li.events.expanded li.event, body.ocw #menu li.event.active,
+  body.ocw #menu li.events.expanded li.event, #mw-osbridge-header #menu li.event.active,
+  #mw-osbridge-header #menu li.events.expanded li.event {
+    display: block; }
+  body.wordpress #menu li.event a,
+  body.wordpress #menu li.event ul, body.ocw #menu li.event a,
+  body.ocw #menu li.event ul, #mw-osbridge-header #menu li.event a,
+  #mw-osbridge-header #menu li.event ul {
+    float: left; }
+  body.wordpress #subnav, body.ocw #subnav, #mw-osbridge-header #subnav {
+    /*  background-color: #d8efff;*/
+    padding: 1em 0 3em; }
+  body.wordpress div#subnav ul a, body.ocw div#subnav ul a, #mw-osbridge-header div#subnav ul a {
+    margin: 0;
+    margin-left: 1.5em; }
+  body.wordpress #subnav ul, body.ocw #subnav ul, #mw-osbridge-header #subnav ul {
+    float: right;
+    margin: -2.2em 280px 0 0; }
+  body.wordpress #subnav a,
+  body.wordpress #subnav a:link,
+  body.wordpress #subnav a:visited,
+  body.wordpress #subnav a:active, body.ocw #subnav a,
+  body.ocw #subnav a:link,
+  body.ocw #subnav a:visited,
+  body.ocw #subnav a:active, #mw-osbridge-header #subnav a,
+  #mw-osbridge-header #subnav a:link,
+  #mw-osbridge-header #subnav a:visited,
+  #mw-osbridge-header #subnav a:active {
+    color: #222; }
+  body.wordpress #subnav h2, body.ocw #subnav h2, #mw-osbridge-header #subnav h2 {
+    line-height: 2;
+    margin: 0;
+    color: #222;
+    padding: 0 270px 0 25px; }
+  body.wordpress div#subnav ul li.current_page_item a,
+  body.wordpress div#subnav ul li.selected a, body.ocw div#subnav ul li.current_page_item a,
+  body.ocw div#subnav ul li.selected a, #mw-osbridge-header div#subnav ul li.current_page_item a,
+  #mw-osbridge-header div#subnav ul li.selected a {
+    background: no-repeat;
+    font-weight: bold; }
+  body.wordpress div#menu ul ul ul a, body.ocw div#menu ul ul ul a, #mw-osbridge-header div#menu ul ul ul a {
+    font-style: italic; }
+  body.wordpress div#menu ul li ul,
+  body.wordpress div.navbar ul li ul, body.ocw div#menu ul li ul,
+  body.ocw div.navbar ul li ul, #mw-osbridge-header div#menu ul li ul,
+  #mw-osbridge-header div.navbar ul li ul {
+    left: -999em;
+    position: absolute; }
+  body.wordpress div#menu ul li:hover ul, body.ocw div#menu ul li:hover ul, #mw-osbridge-header div#menu ul li:hover ul {
+    left: auto; }
+  body.wordpress div#container, body.ocw div#container, #mw-osbridge-header div#container {
+    width: 960px;
+    margin: 2.5em auto; }
+  body.wordpress div#content, body.ocw div#content, #mw-osbridge-header div#content {
+    padding: 0 20px 20px;
+    width: 712px;
+    float: right;
+    background: #fff;
+    margin: -2.5em auto 0;
+    position: relative;
+    min-height: 300px; }
+  body.wordpress #content .page_title,
+  body.wordpress #content .page-title, body.ocw #content .page_title,
+  body.ocw #content .page-title, #mw-osbridge-header #content .page_title,
+  #mw-osbridge-header #content .page-title {
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    color: #222;
+    margin: 0 -20px 20px;
+    background: #edeeef;
+    padding: 0 20px 15px;
+    font-size: 2em;
+    line-height: 1.3; }
+  body.wordpress .register-now-button, body.ocw .register-now-button, #mw-osbridge-header .register-now-button {
+    width: 204px;
+    height: 48px;
+    display: block;
+    background: url(i/register_now.png) no-repeat;
+    overflow: hidden;
+    text-indent: -999px;
+    margin: 0 auto; }
+  body.wordpress .book-now-button, body.ocw .book-now-button, #mw-osbridge-header .book-now-button {
+    width: 204px;
+    height: 48px;
+    display: block;
+    background: url(i/book_a_room.png) no-repeat;
+    overflow: hidden;
+    text-indent: -999px;
+    margin: 0 auto; }
+  body.wordpress a.submit-a-proposal-button, body.ocw a.submit-a-proposal-button, #mw-osbridge-header a.submit-a-proposal-button {
+    width: 200px;
+    font-weight: bold;
+    color: #fff;
+    border: 3px solid #109A8B;
+    display: block;
+    margin: 0 auto;
+    padding: .5em 1em;
+    background: #08B9A6; }
+  body.wordpress div.section_title h2, body.ocw div.section_title h2, #mw-osbridge-header div.section_title h2 {
+    font-weight: bold;
+    margin-left: 27px;
+    font-size: 18px;
+    line-height: 1; }
+  body.wordpress div.section_title h2.event_level,
+  body.wordpress div.section_title h2.event_level a, body.ocw div.section_title h2.event_level,
+  body.ocw div.section_title h2.event_level a, #mw-osbridge-header div.section_title h2.event_level,
+  #mw-osbridge-header div.section_title h2.event_level a {
+    color: #116db6; }
+  body.wordpress div.section_title h2.global_level,
+  body.wordpress div.section_title h2.global_level a, body.ocw div.section_title h2.global_level,
+  body.ocw div.section_title h2.global_level a, #mw-osbridge-header div.section_title h2.global_level,
+  #mw-osbridge-header div.section_title h2.global_level a {
+    color: #08b9a6; }
+  body.wordpress div.sidebar, body.ocw div.sidebar, #mw-osbridge-header div.sidebar {
+    color: #222;
+    font-size: 14px;
+    width: 200px; }
+  body.wordpress #subscribe-to, body.ocw #subscribe-to, #mw-osbridge-header #subscribe-to {
+    padding: 1em; }
+  body.wordpress #subscribe-to h3, body.ocw #subscribe-to h3, #mw-osbridge-header #subscribe-to h3 {
+    display: none; }
+  body.wordpress .sidebar ul.xoxo, body.ocw .sidebar ul.xoxo, #mw-osbridge-header .sidebar ul.xoxo {
+    margin: 0 0 0 27px; }
+  body.wordpress .sidebar li li a, body.ocw .sidebar li li a, #mw-osbridge-header .sidebar li li a {
+    color: #6d6e71; }
+  body.wordpress .sidebar li li.active,
+  body.wordpress .sidebar li.current_page_item, body.ocw .sidebar li li.active,
+  body.ocw .sidebar li.current_page_item, #mw-osbridge-header .sidebar li li.active,
+  #mw-osbridge-header .sidebar li.current_page_item {
+    background: url(i/v4_active_subnav.png) left center no-repeat; }
+  body.wordpress div.sidebar div, body.wordpress div.sidebar ul, body.ocw div.sidebar div, body.ocw div.sidebar ul, #mw-osbridge-header div.sidebar div, #mw-osbridge-header div.sidebar ul {
+    margin: 0;
+    padding: 0; }
+  body.wordpress div.sidebar h3, body.ocw div.sidebar h3, #mw-osbridge-header div.sidebar h3 {
+    margin: 0;
+    font-size: 1.25em;
+    color: #222; }
+  body.wordpress div.sidebar li, body.ocw div.sidebar li, #mw-osbridge-header div.sidebar li {
+    list-style: none;
+    margin-bottom: 1em; }
+  body.wordpress div.sidebar li form, body.ocw div.sidebar li form, #mw-osbridge-header div.sidebar li form {
+    margin: 0.2em 0 0;
+    padding: 0; }
+  body.wordpress div.sidebar ul ul, body.ocw div.sidebar ul ul, #mw-osbridge-header div.sidebar ul ul {
+    margin: 0 0 0 0; }
+  body.wordpress div.sidebar ul ul li, body.ocw div.sidebar ul ul li, #mw-osbridge-header div.sidebar ul ul li {
+    margin: 0;
+    padding-left: 15px; }
+  body.wordpress div.sidebar ul ul ul, body.ocw div.sidebar ul ul ul, #mw-osbridge-header div.sidebar ul ul ul {
+    margin: 0 0 0 1em; }
+  body.wordpress div.sidebar ul ul ul li, body.ocw div.sidebar ul ul ul li, #mw-osbridge-header div.sidebar ul ul ul li {
+    list-style: circle;
+    padding: 0; }
+  body.wordpress li.pre-bulletted, body.ocw li.pre-bulletted, #mw-osbridge-header li.pre-bulletted {
+    list-style: none;
+    position: relative;
+    left: -18px; }
+  body.wordpress div.sidebar li.pre-bulletted, body.ocw div.sidebar li.pre-bulletted, #mw-osbridge-header div.sidebar li.pre-bulletted {
+    padding: 0;
+    margin-left: -3px; }
+  body.wordpress .sidebar #account-box, body.ocw .sidebar #account-box, #mw-osbridge-header .sidebar #account-box {
+    padding: 5px;
+    margin-left: -5px; }
+  body.wordpress .sidebar #account-box h3, body.ocw .sidebar #account-box h3, #mw-osbridge-header .sidebar #account-box h3 {
+    font-size: 1em;
+    font-weight: bold; }
+  body.wordpress .sidebar #account-box .user_actions, body.ocw .sidebar #account-box .user_actions, #mw-osbridge-header .sidebar #account-box .user_actions {
+    font-size: .9em; }
+  body.wordpress .sidebar #account-box .user-photo, body.ocw .sidebar #account-box .user-photo, #mw-osbridge-header .sidebar #account-box .user-photo {
+    float: left;
+    clear: none;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #222;
+    margin: 0 .5em 0 0; }
+  body.wordpress div#footer, body.ocw div#footer, #mw-osbridge-header div#footer {
+    clear: both;
+    width: 100%;
+    background: #191919 url(i/v3_icon_footer.gif) no-repeat center bottom;
+    padding: 25px 0 60px;
+    text-align: center;
+    color: #ccc;
+    margin: 30px 0 0; }
+  body.wordpress #site-title a, body.ocw #site-title a, #mw-osbridge-header #site-title a {
+    overflow: hidden;
+    text-indent: -999px;
+    display: block; }
+  body.wordpress #site-title a, body.ocw #site-title a, #mw-osbridge-header #site-title a {
+    width: 189px;
+    height: 94px;
+    background: url(i/v4_header_logo.gif) no-repeat; }
+  body.wordpress a.chicklet, body.ocw a.chicklet, #mw-osbridge-header a.chicklet {
+    display: block;
+    padding: 3px 0 0 50px;
+    min-height: 23px;
+    background-position: 0 center;
+    background-repeat: no-repeat; }
+  body.wordpress a.chicklet.twitter, body.ocw a.chicklet.twitter, #mw-osbridge-header a.chicklet.twitter {
+    background-image: url(i/twitter.png); }
+  body.wordpress a.chicklet.facebook, body.ocw a.chicklet.facebook, #mw-osbridge-header a.chicklet.facebook {
+    background-image: url(i/facebook.png); }
+  body.wordpress a.chicklet.dopplr, body.ocw a.chicklet.dopplr, #mw-osbridge-header a.chicklet.dopplr {
+    background-image: url(i/dopplr.png); }
+  body.wordpress a.chicklet.identica, body.ocw a.chicklet.identica, #mw-osbridge-header a.chicklet.identica {
+    background-image: url(i/identica.png); }
+  body.wordpress a.chicklet.linkedin, body.ocw a.chicklet.linkedin, #mw-osbridge-header a.chicklet.linkedin {
+    background-image: url(i/linkedin.png); }
+  body.wordpress a.chicklet.rss, body.ocw a.chicklet.rss, #mw-osbridge-header a.chicklet.rss {
+    background-image: url(i/rss.png); }
+  body.wordpress a.chicklet.friendfeed, body.ocw a.chicklet.friendfeed, #mw-osbridge-header a.chicklet.friendfeed {
+    background-image: url(i/friendfeed.png); }
+  body.wordpress a.feedburner, body.ocw a.feedburner, #mw-osbridge-header a.feedburner {
+    margin-left: 50px; }
+  body.wordpress a.chicklet.calendar, body.ocw a.chicklet.calendar, #mw-osbridge-header a.chicklet.calendar {
+    background-image: url(i/calendar.png); }
+  body.wordpress .flash p, body.ocw .flash p, #mw-osbridge-header .flash p {
+    margin: 0.5em 0;
+    padding: 0.5em; }
+  body.wordpress .flash .notice, body.ocw .flash .notice, #mw-osbridge-header .flash .notice {
+    color: #555555;
+    background: #f1f9ff;
+    border: 1px solid #116db6; }
+  body.wordpress .flash .success, body.ocw .flash .success, #mw-osbridge-header .flash .success {
+    color: #555555;
+    background: #e1ffe8;
+    border: 1px solid #08b9a6; }
+  body.wordpress .flash .failure, body.ocw .flash .failure, #mw-osbridge-header .flash .failure {
+    color: #555555;
+    background: #ffeded;
+    border: 1px solid #c60000; }
+  body.wordpress #errorExplanation, body.ocw #errorExplanation, #mw-osbridge-header #errorExplanation {
+    border: 2px solid #c60000;
+    padding: 7px;
+    padding-bottom: 12px;
+    margin-bottom: 20px; }
+  body.wordpress #errorExplanation h2, body.ocw #errorExplanation h2, #mw-osbridge-header #errorExplanation h2 {
+    padding: .5em 1em;
+    font-size: 1em;
+    margin: -7px;
+    background-color: #c60000;
+    color: #fff; }
+  body.wordpress #errorExplanation p, body.ocw #errorExplanation p, #mw-osbridge-header #errorExplanation p {
+    color: #333;
+    margin: 1em .5em .5em; }
+  body.wordpress #errorExplanation ul, body.ocw #errorExplanation ul, #mw-osbridge-header #errorExplanation ul {
+    margin-bottom: 0; }
+  body.wordpress #errorExplanation li, body.ocw #errorExplanation li, #mw-osbridge-header #errorExplanation li {
+    font-size: .9em; }
+  body.wordpress .fieldWithErrors, body.ocw .fieldWithErrors, #mw-osbridge-header .fieldWithErrors {
+    margin: 0;
+    display: inline;
+    background-color: inherit; }
+  body.wordpress .fieldWithErrors label, body.ocw .fieldWithErrors label, #mw-osbridge-header .fieldWithErrors label {
+    color: #c60000; }
+  body.wordpress .fieldWithErrors textarea,
+  body.wordpress .fieldWithErrors input[type=text],
+  body.wordpress .fieldWithErrors input[type=checkbox], body.ocw .fieldWithErrors textarea,
+  body.ocw .fieldWithErrors input[type=text],
+  body.ocw .fieldWithErrors input[type=checkbox], #mw-osbridge-header .fieldWithErrors textarea,
+  #mw-osbridge-header .fieldWithErrors input[type=text],
+  #mw-osbridge-header .fieldWithErrors input[type=checkbox] {
+    border: 2px solid #c60000; }
+  body.wordpress .register-callout,
+  body.wordpress div.sidebar div.register-callout, body.ocw .register-callout,
+  body.ocw div.sidebar div.register-callout, #mw-osbridge-header .register-callout,
+  #mw-osbridge-header div.sidebar div.register-callout {
+    background: #08b9a6;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    max-width: 150px; }
+  body.wordpress a.register-button,
+  body.wordpress a.register-button:link,
+  body.wordpress a.register-button:visited,
+  body.wordpress a.register-button:active, body.ocw a.register-button,
+  body.ocw a.register-button:link,
+  body.ocw a.register-button:visited,
+  body.ocw a.register-button:active, #mw-osbridge-header a.register-button,
+  #mw-osbridge-header a.register-button:link,
+  #mw-osbridge-header a.register-button:visited,
+  #mw-osbridge-header a.register-button:active {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    padding: .5em;
+    background: #109a8b;
+    color: #fff;
+    text-decoration: none; }
+  body.wordpress .hotel-callout,
+  body.wordpress div.sidebar .hotel-callout, body.ocw .hotel-callout,
+  body.ocw div.sidebar .hotel-callout, #mw-osbridge-header .hotel-callout,
+  #mw-osbridge-header div.sidebar .hotel-callout {
+    background: #0bacd9;
+    color: #fff;
+    padding: 10px;
+    max-width: 150px;
+    margin-bottom: 20px; }
+  body.wordpress a.book-room-button,
+  body.wordpress a.book-room-button:link,
+  body.wordpress a.book-room-button:visited,
+  body.wordpress a.book-room-button:active, body.ocw a.book-room-button,
+  body.ocw a.book-room-button:link,
+  body.ocw a.book-room-button:visited,
+  body.ocw a.book-room-button:active, #mw-osbridge-header a.book-room-button,
+  #mw-osbridge-header a.book-room-button:link,
+  #mw-osbridge-header a.book-room-button:visited,
+  #mw-osbridge-header a.book-room-button:active {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    padding: .5em;
+    background: #238db2;
+    color: #fff;
+    text-decoration: none; }
+  body.wordpress .donate-callout,
+  body.wordpress div.sidebar .donate-callout, body.ocw .donate-callout,
+  body.ocw div.sidebar .donate-callout, #mw-osbridge-header .donate-callout,
+  #mw-osbridge-header div.sidebar .donate-callout {
+    background: #a05cda;
+    color: #fff;
+    padding: 10px;
+    max-width: 150px;
+    position: relative;
+    left: -10px; }
+  body.wordpress a.donate-button,
+  body.wordpress a.donate-button:link,
+  body.wordpress a.donate-button:visited,
+  body.wordpress a.donate-button:active, body.ocw a.donate-button,
+  body.ocw a.donate-button:link,
+  body.ocw a.donate-button:visited,
+  body.ocw a.donate-button:active, #mw-osbridge-header a.donate-button,
+  #mw-osbridge-header a.donate-button:link,
+  #mw-osbridge-header a.donate-button:visited,
+  #mw-osbridge-header a.donate-button:active {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    padding: .5em;
+    background: #7c47a9;
+    color: #fff;
+    text-decoration: none; }
+  body.wordpress .frontpage_snippet, body.ocw .frontpage_snippet, #mw-osbridge-header .frontpage_snippet {
+    padding: 0 0 1em 60px; }
+  body.wordpress #citizen_snippet, body.ocw #citizen_snippet, #mw-osbridge-header #citizen_snippet {
+    background: url(i/v3_icon_citizen.gif) no-repeat 7px 3px; }
+  body.wordpress #tracks_snippet, body.ocw #tracks_snippet, #mw-osbridge-header #tracks_snippet {
+    background: url(i/v3_icon_tracks.gif) no-repeat 7px 3px; }
+  body.wordpress #lounge_snippet, body.ocw #lounge_snippet, #mw-osbridge-header #lounge_snippet {
+    background: url(i/v3_icon_lounge.png) no-repeat 7px 0; }
+  body.wordpress #volunteer_snippet, body.ocw #volunteer_snippet, #mw-osbridge-header #volunteer_snippet {
+    background: url(i/v3_icon_volunteers.png) no-repeat 7px 3px; }
+  body.wordpress h2#latest_news_head, body.ocw h2#latest_news_head, #mw-osbridge-header h2#latest_news_head {
+    font-weight: bold;
+    color: #222;
+    background: url(i/v3_icon_news.png) no-repeat;
+    min-height: 32px;
+    padding: 5px 0 0 40px;
+    font-size: 1.25em;
+    border-bottom: 1px solid #eee; }
+  body.wordpress h2#latest_news_head a, body.ocw h2#latest_news_head a, #mw-osbridge-header h2#latest_news_head a {
+    font-size: .7em;
+    float: right;
+    font-weight: normal; }
+  body.wordpress #frontpage_info, body.ocw #frontpage_info, #mw-osbridge-header #frontpage_info {
+    background: url(i/5_year_background.png) repeat-x;
+    padding: 2.5em 0;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Arial, Helvetica, sans-serif; }
+
+/*# sourceMappingURL=osbp_common_v3.css.map */
